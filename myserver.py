@@ -42,12 +42,19 @@ def handle_request(client_socket, received_message):
                 client_socket.send(response.encode())
 
             else:
-                response = "HTTP/1.1 400 Bad Request\n"
-                response += "Content-Type: text/html; charset-utf-8\r\n"
+                print("--------------------------------")
+                response = "HTTP/1.1 400 Bad Request\r\n"
                 error_file = LINK + "error.html"
                 r_file = open(error_file, 'r')
+                document_length = os.path.getsize(error_file)
+                response += "Content-Length: " + str(document_length) + "\r\n"
+                response += "Content-Type: text/html; charset-utf-8\r\n"
+                response += "\r\n"
+                
                 # size_of_error_file = os.path.getsize()
                 response += r_file.read()
+
+                print(response)
                 r_file.close()
                 client_socket.send(response.encode())
 
