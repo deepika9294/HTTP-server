@@ -15,6 +15,14 @@ from urllib.parse import *	 # for parsing URL/URI
 
 #link
 LINK = "./htdocs/"
+
+def check_version(version_):
+    if(version != "HTTP/1.1"):
+        return "505 HTTP Version Not Supported"
+    else:
+        return -1
+
+
 def handle_post_data(postdata):
     data = postdata.split("&")
     parameters = {}
@@ -28,16 +36,16 @@ def handle_post_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     # need changes in json data
+    # if("Content-Type: application/x-www-form-urlencoded" not in split_message):
+    #     status_code = 415
+        
     json_response = handle_post_data(message[1])
-    # needto work as file directoy
-    #also check what if "/"
-    file_write = LINK + request_0[1][1:] + ".txt"
+    file_write = LINK + "data.txt"
     if(os.path.exists(file_write)):
         status_code = "200 OK"
         content_type = "text/html"
         r_file = open(file_write, 'a')
         r_file.write(str(json_response))
-        
         
 
     else:
@@ -64,7 +72,6 @@ def handle_post_request(client_socket, message):
 
     
 
-
 def handle_get_head_request(client_socket, split_message):
     request_0 = split_message[0].split(" ")
     #default_values    ------check if need to change
@@ -78,8 +85,11 @@ def handle_get_head_request(client_socket, split_message):
     # check whether to keep or not
     if(len(request_0) < 3):
         status_code = "400 Bad Request"
+        file_name = LINK + "badrequest"
         #send the response here itself and return
-   
+    elif(check_version(request_0[0]) != -1):
+        status_code = check_version(request_0[0])
+        file_name = LINK + "version.html"
     elif "GET" in request_0[0] or "HEAD" in request_0[0]:
 
         if('/' == request_0[1]):  
@@ -162,7 +172,7 @@ def threading(client_socket):
     received_message = client_socket.recv(2046)  
     try:
         received_message = received_message.decode('utf-8')
-        # print("STUDY {}".format(received_message))
+        print("STUDY {}".format(received_message))
     except UnicodeDecodeError:
         print("ERROR")
     # print(received_message)
