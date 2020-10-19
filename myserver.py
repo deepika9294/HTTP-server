@@ -13,7 +13,7 @@ import datetime
 #link
 LINK = "./htdocs/"
 
-def handle_get_request(client_socket, split_message):
+def handle_get_head_request(client_socket, split_message):
     request_0 = split_message[0].split(" ")
     #default_values    ------check if need to change
     content_type = "text/html"
@@ -28,14 +28,10 @@ def handle_get_request(client_socket, split_message):
         status_code = "400 Bad Request"
         #send the response here itself and return
    
-    elif "GET" in request_0[0]:
-        print("ENTER GET")
-
+    elif "GET" in request_0[0] or "HEAD" in request_0[0]:
 
         if('/' == request_0[1]):  
             #if this happen then try to find index.html
-            print("ENTER /")
-
             requested_document = LINK + "index.html"
             content_type = "text/html"
 
@@ -46,7 +42,7 @@ def handle_get_request(client_socket, split_message):
             temp_content_type = request_0[1].split(".")
             if(len(temp_content_type) == 1):
                 status_code = "404 Not Found"
-                requested_document = LINK + "error.html"
+                # requested_document = LINK + "error.html"
             elif(temp_content_type[1] == "html"):
                 content_type = "text/html"
             elif(temp_content_type[1] == "jpg" or temp_content_type[1] == "jpeg" or temp_content_type[1] == "png"):
@@ -69,9 +65,7 @@ def handle_get_request(client_socket, split_message):
             response += "Content-Length: " + str(document_length) + "\r\n"
             response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
             response += "\r\n"
-            # response += r_file.read(document_length)
             if("image" in content_type or "video" in content_type or "audio" in content_type):
-                # file_data = r_file.read(document_length)
                 file_data = b""
                 b = r_file.read(1)
                 while(b != b""):
@@ -80,7 +74,6 @@ def handle_get_request(client_socket, split_message):
 
             else:
                 file_data = r_file.read(document_length)
-
 
 
             r_file.close()
@@ -104,7 +97,8 @@ def handle_get_request(client_socket, split_message):
             print(response)
             r_file.close()
         client_socket.send(response.encode())
-        client_socket.send(file_data)       #checkif sendfile
+        if("GET" == request_0[0]):
+            client_socket.send(file_data)       #checkif sendfile
 
 
                 
@@ -122,7 +116,7 @@ def threading(client_socket):
     split_message = received_message.split("\r\n")
     #handle in more better way
     if("GET" in split_message[0] or "HEAD" in split_message[0]):
-        handle_get_request(client_socket, split_message)
+        handle_get_head_request(client_socket, split_message)
     else:
         print("something else")
     client_socket.shutdown(SHUT_WR)
