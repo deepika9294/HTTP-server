@@ -107,17 +107,9 @@ def handle_get_request(client_socket, split_message):
         client_socket.send(file_data)       #checkif sendfile
 
 
-    # print("DECODED_MESSAGE ::: {}".format(received_message))
-    # print("SPLIT_MESSAGE ::: {}".format(split_message))
-
                 
 
     #check for version, otherwise send bad request
-
-    
-    
-
-
 
 def threading(client_socket):
     #decide the size
@@ -129,7 +121,7 @@ def threading(client_socket):
         print("ERROR")
     split_message = received_message.split("\r\n")
     #handle in more better way
-    if("GET" in split_message[0]):
+    if("GET" in split_message[0] or "HEAD" in split_message[0]):
         handle_get_request(client_socket, split_message)
     else:
         print("something else")
