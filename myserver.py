@@ -5,6 +5,9 @@ import threading
 import sys
 import os
 import datetime
+import json
+from urllib.parse import *	 # for parsing URL/URI
+
 
 #-----------------------------------------------------------------------------------------------------------------------
     #web pages are encoded in utf-8
@@ -12,6 +15,55 @@ import datetime
 
 #link
 LINK = "./htdocs/"
+def handle_post_data(postdata):
+    data = postdata.split("&")
+    parameters = {}
+    for param in data:
+        divide = param.split("=")
+        parameters[str(divide[0])] = divide[1]
+    json_data = json.dumps(parameters)
+    return json_data
+
+def handle_post_request(client_socket, message):
+    split_message = message[0].split("\r\n")
+    request_0 = split_message[0].split(" ")
+    # need changes in json data
+    json_response = handle_post_data(message[1])
+    # needto work as file directoy
+    #also check what if "/"
+    file_write = LINK + request_0[1][1:] + ".txt"
+    if(os.path.exists(file_write)):
+        status_code = "200 OK"
+        content_type = "text/html"
+        r_file = open(file_write, 'a')
+        r_file.write(str(json_response))
+        
+        
+
+    else:
+        status_code = "201 Created"
+        content_type = "text/html"
+        #create file
+        r_file = open(file_write, 'w')
+        r_file.write(str(json_response))
+
+    r_file.close()
+    current_time = datetime.datetime.now()
+    response = "HTTP/1.1 " +status_code + "\r\n"
+    response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+    response += "Accept-Ranges: bytes\r\n"
+    # document_length = os.path.getsize(requested_document)
+    # response += "Content-Length: " + str(document_length) + "\r\n"
+    response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
+    response += "\r\n"
+    client_socket.send(response.encode())
+    saved_file = LINK + "saved.html"
+    r_file = open(saved_file, "rb")
+    client_socket.sendfile(r_file)
+    r_file.close()
+
+    
+
 
 def handle_get_head_request(client_socket, split_message):
     request_0 = split_message[0].split(" ")
@@ -113,10 +165,15 @@ def threading(client_socket):
         # print("STUDY {}".format(received_message))
     except UnicodeDecodeError:
         print("ERROR")
+    # print(received_message)
+    message = received_message.split("\r\n\r\n")
     split_message = received_message.split("\r\n")
+
     #handle in more better way
     if("GET" in split_message[0] or "HEAD" in split_message[0]):
         handle_get_head_request(client_socket, split_message)
+    elif("POST" in split_message[0]):
+        handle_post_request(client_socket, message)
     else:
         print("something else")
     client_socket.shutdown(SHUT_WR)
