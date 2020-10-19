@@ -16,11 +16,45 @@ from urllib.parse import *	 # for parsing URL/URI
 #link
 LINK = "./htdocs/"
 
-def check_version(version_):
-    if(version != "HTTP/1.1"):
-        return "505 HTTP Version Not Supported"
-    else:
+def check_version(version):
+    print(version)
+    if(version == "HTTP/1.1" or version == "HTTP/1.0"):
         return -1
+    else:
+        return "505 HTTP Version Not Supported"
+
+
+def handle_put_request(client_socket, message):
+    #see the encoding thing properly
+    status_code = "200 Ok"
+    split_message = message[0].split("\r\n")
+    request_0 = split_message[0].split(" ")
+    print("MESSSAAAAGEE {}".format(message[1]))
+    #message_1 is the data to be written
+    file_name = LINK + "check.png"
+    
+
+    file_data = b"" + message[1]
+    
+    # check1 = received_message = client_socket.recv(4092)
+    # check2 = received_message = client_socket.recv(4092)
+    # file_data += check1
+    # file_data += check2
+
+    r_file = open(file_name, "wb")
+    r_file.write(file_data)
+    r_file.close()
+
+    response = "HTTP/1.1 " +status_code + "\r\n"
+    current_time = datetime.datetime.now()
+    response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+    response += "Accept-Ranges: bytes\r\n"
+    response += "\r\n"
+    client_socket.send(response.encode())
+
+
+
+
 
 
 def handle_post_data(postdata):
@@ -36,7 +70,8 @@ def handle_post_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     # need changes in json data
-    # if("Content-Type: application/x-www-form-urlencoded" not in split_message):
+    #definitely add this
+    # if("Content-Type: application/x-www-form-urlencoded" not in split_message): 
     #     status_code = 415
         
     json_response = handle_post_data(message[1])
@@ -60,7 +95,7 @@ def handle_post_request(client_socket, message):
     response = "HTTP/1.1 " +status_code + "\r\n"
     response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
     response += "Accept-Ranges: bytes\r\n"
-    # document_length = os.path.getsize(requested_document)
+    # document_length = os.path.getsize(file_name)
     # response += "Content-Length: " + str(document_length) + "\r\n"
     response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
     response += "\r\n"
@@ -82,29 +117,26 @@ def handle_get_head_request(client_socket, split_message):
     #request_0[2] defines version
     print("REQUEST {}".format(request_0))
 
-    # check whether to keep or not
-    if(len(request_0) < 3):
-        status_code = "400 Bad Request"
-        file_name = LINK + "badrequest"
-        #send the response here itself and return
-    elif(check_version(request_0[0]) != -1):
-        status_code = check_version(request_0[0])
-        file_name = LINK + "version.html"
-    elif "GET" in request_0[0] or "HEAD" in request_0[0]:
+    # check condition of bad request
+    #write a function
+
+    
+    # elif "GET" in request_0[0] or "HEAD" in request_0[0]:
+    if "GET" in request_0[0] or "HEAD" in request_0[0]:
 
         if('/' == request_0[1]):  
             #if this happen then try to find index.html
-            requested_document = LINK + "index.html"
+            file_name = LINK + "index.html"
             content_type = "text/html"
 
         else:
-            requested_document = LINK + request_0[1][1:]
-            print("somethingelse requested: {}".format(requested_document))
+            file_name = LINK + request_0[1][1:]
+            print("somethingelse requested: {}".format(file_name))
             #check for type of file:
             temp_content_type = request_0[1].split(".")
             if(len(temp_content_type) == 1):
                 status_code = "404 Not Found"
-                # requested_document = LINK + "error.html"
+                #check can be a directory
             elif(temp_content_type[1] == "html"):
                 content_type = "text/html"
             elif(temp_content_type[1] == "jpg" or temp_content_type[1] == "jpeg" or temp_content_type[1] == "png"):
@@ -116,14 +148,14 @@ def handle_get_head_request(client_socket, split_message):
 
 
 
-        if os.path.exists(requested_document):
+        if os.path.exists(file_name):
             status_code = "200 OK"
-            r_file = open(requested_document, 'rb')
+            r_file = open(file_name, 'rb')
             current_time = datetime.datetime.now()
             response = "HTTP/1.1 " +status_code + "\r\n"
             response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
             response += "Accept-Ranges: bytes\r\n"
-            document_length = os.path.getsize(requested_document)
+            document_length = os.path.getsize(file_name)
             response += "Content-Length: " + str(document_length) + "\r\n"
             response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
             response += "\r\n"
@@ -133,10 +165,9 @@ def handle_get_head_request(client_socket, split_message):
                 while(b != b""):
                     file_data += b
                     b = r_file.read(1)
-
+                # print("FILE: {}".format(file_data))
             else:
                 file_data = r_file.read(document_length)
-
 
             r_file.close()
             print("Ffd {}".format(response))
@@ -148,42 +179,46 @@ def handle_get_head_request(client_socket, split_message):
             error_file = LINK + "error.html"
             r_file = open(error_file, 'rb')
             document_length = os.path.getsize(error_file)
+            current_time = datetime.datetime.now()
+            response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+
             response += "Content-Length: " + str(document_length) + "\r\n"
             response += "Content-Type: text/html; charset-utf-8\r\n"
             response += "\r\n"
-            
-            # size_of_error_file = os.path.getsize()
-            # response += r_file.read(document_length)
             file_data = r_file.read(document_length)
-
-            print(response)
             r_file.close()
+        print(response)
         client_socket.send(response.encode())
         if("GET" == request_0[0]):
-            client_socket.send(file_data)       #checkif sendfile
+            client_socket.send(file_data)       
 
-
-                
-
-    #check for version, otherwise send bad request
 
 def threading(client_socket):
     #decide the size
-    received_message = client_socket.recv(2046)  
+    received_message = client_socket.recv(32768)
+    # print("REC {}".format(received_message))  
     try:
         received_message = received_message.decode('utf-8')
-        print("STUDY {}".format(received_message))
+        message = received_message.split("\r\n\r\n")
+
+        # print("STUDY {}".format(received_message))
     except UnicodeDecodeError:
+        message = received_message.split(b"\r\n\r\n")
+        # print("MESA000 {}".format(message[0]))
+        message[0] = message[0].decode(errors = 'ignore')
+        # print("MESA000 {}".format(message[0]))
+
         print("ERROR")
-    # print(received_message)
-    message = received_message.split("\r\n\r\n")
-    split_message = received_message.split("\r\n")
+    # print(message)
+    split_message = message[0].split("\r\n")
 
     #handle in more better way
     if("GET" in split_message[0] or "HEAD" in split_message[0]):
         handle_get_head_request(client_socket, split_message)
     elif("POST" in split_message[0]):
         handle_post_request(client_socket, message)
+    elif("PUT" in split_message[0]):
+        handle_put_request(client_socket, message)
     else:
         print("something else")
     client_socket.shutdown(SHUT_WR)
@@ -198,7 +233,6 @@ def create_server(port):
         while(True):
             client_socket, client_address = server_socket.accept()
             # print("clientSocket {} and client address {}".format(client_socket,client_address))
-
 
             #threadinnggg
             # threading(client_socket)
