@@ -1,0 +1,7 @@
+----------------------------989518110237995876424946
+Content-Disposition: form-data; name="name"jow
+----------------------------989518110237995876424946
+Content-Disposition: form-data; name="lastname"dow
+----------------------------989518110237995876424946
+Content-Disposition: form-data; name="file"; filename="post_text.txt"
+Content-Type: text/plain

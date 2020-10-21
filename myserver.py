@@ -25,7 +25,6 @@ def check_version(version):
 
 def handle_old_put_request(client_socket, message):
     #see the encoding thing properly
-    status_code = "200 Ok"
     split_message = message[0].split("\r\n")
     print("HEADERS {}".format(split_message))
 
@@ -44,9 +43,6 @@ def handle_old_put_request(client_socket, message):
 
     length = int(request_header["Content-Length"])
     content_type = request_header["Content-Type"]
-    # print(request_header, length)
-    # header_length = SIZE - len(message[1])
-    # length = length - header_length
     quotient = int(length // SIZE)
     remainder = length % SIZE
     #check the size issue
@@ -68,12 +64,25 @@ def handle_old_put_request(client_socket, message):
         except TypeError:
             data = data.encode()
             file_data = file_data + data
-    if(len(request_0[1].split(".")) == 1):
-        file_name += '.' +content_type.split("/")[1]
-    r_file = open(file_name, "wb")
-    r_file.write(file_data)
-    r_file.close()
 
+    url_path = LINK + request_0[1][1:]        
+    if(os.path.isfile(url_path)):
+        r_file = open(url_path, "wb")
+        r_file.write(file_data)
+        r_file.close()
+        status_code = "200 Not Found"
+
+
+    elif(os.path.isdir(url_path)):
+        put_uuid = str(uuid.uuid4())
+        file_name = url_path + "/"+ put_uuid + "."+ content_type.split("/")[1]
+        r_file = open(file_name, "wb")
+        r_file.write(file_data)
+        r_file.close()
+        status_code = "201 Created"
+
+    else:
+        status_code = "404 Not Found"
     response = "HTTP/1.1 " +status_code + "\r\n"
     current_time = datetime.datetime.now()
     response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
@@ -85,16 +94,7 @@ def handle_delete_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     print("MASSS {}".format(message))
-    # request_header = {}
-    # for i in split_message:
-    #     t = i.split(": ")
-    #     if(len(t) == 2):
-    #         request_header[t[0]] = t[1]
-
-    # content_type = request_header["Content-Type"]
-    # if(content_type == "application/x-www-form-urlencoded"): 
-        # url_path = RESOURCES + request_0[1][1:] + ".json"   
-    #deletion of file only supported
+    
     delete_url = LINK  + request_0[1][1:]
 
     if(os.path.isfile(delete_url)):
@@ -124,17 +124,16 @@ def handle_put_request(client_socket, message):
 
     content_type = request_header["Content-Type"]
     if(content_type == "application/x-www-form-urlencoded"): 
-        url_path = LINK + request_0[1][1:] + ".json"       
-        url_path_dir = LINK + request_0[1][1:]
+        url_path = LINK + request_0[1][1:]        
         if(os.path.isfile(url_path)):
             r_file = open(url_path, 'w')
             r_file.write(parse_urlencoded(message[1]))
             r_file.close()
             status_code = "200 Ok"
 
-        elif(os.path.isdir(url_path_dir)):
+        elif(os.path.isdir(url_path)):
             put_uuid = str(uuid.uuid4())
-            put_path = url_path_dir +"/" + put_uuid + ".json"
+            put_path = url_path +"/" + put_uuid + ".json"
             r_file = open(put_path, 'w')
             r_file.write(parse_urlencoded(message[1]))
             r_file.close()
@@ -150,8 +149,34 @@ def handle_put_request(client_socket, message):
         response += "Accept-Ranges: bytes\r\n"
         response += "\r\n"
         client_socket.send(response.encode())
+    elif(content_type == "text/plain"):
+        url_path = LINK + request_0[1][1:]        
+        if(os.path.isfile(url_path)):
+            r_file = open(url_path, 'w')
+            r_file.write(message[1])
+            r_file.close()
+            status_code = "200 Ok"
 
+        elif(os.path.isdir(url_path)):
+            put_uuid = str(uuid.uuid4())
+            put_path = url_path +"/" + put_uuid + ".txt"
+            r_file = open(put_path, 'w')
+            r_file.write(message[1])
+            r_file.close()
+            status_code = "201 Created"
+        else: 
+            status_code = "404 Not Found"
 
+        current_time = datetime.datetime.now()
+        response = "HTTP/1.1 " +status_code + "\r\n"
+        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+        response += "Accept-Ranges: bytes\r\n"
+        response += "\r\n"
+        client_socket.send(response.encode())
+    elif(content_type == "image/png" or content_type == "image/jpg"):
+        handle_old_put_request(client_socket, message)
+
+    
 
 
 
@@ -175,6 +200,8 @@ def handle_post_request(client_socket, message):
             request_header[t[0]] = t[1]
 
     content_type = request_header["Content-Type"]
+    print(content_type)
+    print("$$$$$$$$$$$")
     if(content_type == "application/x-www-form-urlencoded"): 
     
         json_response = parse_urlencoded(message[1])
@@ -221,6 +248,30 @@ def handle_post_request(client_socket, message):
             r_file = open(send_file_response, "rb")
             client_socket.sendfile(r_file)
             r_file.close()
+    elif("multipart/form-data" in content_type):
+        print(message)
+        print("-------------")
+        print(message[1])
+        post_url = RESOURCES + str(uuid.uuid4()) +".txt"
+        request_url = LINK + request_0[1][1:]
+        if(os.path.exists(request_url)):
+            r_file = open(post_url, "w")
+            for i in range(1,len(message)):
+                r_file.write(message[i])
+            r_file.close()
+            status_code = "200 Ok"
+        else:
+            status_code = "404 Not Found"
+
+
+        current_time = datetime.datetime.now()
+        response = "HTTP/1.1 " +status_code + "\r\n"
+        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+        response += "Accept-Ranges: bytes\r\n"
+        # response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
+        response += "\r\n"
+        client_socket.send(response.encode())
+
     else: 
 
         status_code ="415 Unsupported Media Type"
@@ -319,8 +370,8 @@ def handle_get_head_request(client_socket, split_message):
 
 def threading(client_socket):
     #decide the size
-    received_message = client_socket.recv(SIZE)
-    # print("REC {}".format(received_message))  
+    received_message = client_socket.recv(SIZE*100)
+    print("REC {}".format(received_message))  
     try:
         received_message = received_message.decode('utf-8')
         message = received_message.split("\r\n\r\n")
