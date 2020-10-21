@@ -23,7 +23,7 @@ def check_version(version):
     else:
         return "505 HTTP Version Not Supported"
 
-def handle_put_request(client_socket, message):
+def handle_old_put_request(client_socket, message):
     #see the encoding thing properly
     status_code = "200 Ok"
     split_message = message[0].split("\r\n")
@@ -81,12 +81,81 @@ def handle_put_request(client_socket, message):
     response += "\r\n"
     client_socket.send(response.encode())
 
+def handle_delete_request(client_socket, message):
+    split_message = message[0].split("\r\n")
+    request_0 = split_message[0].split(" ")
+    print("MASSS {}".format(message))
+    # request_header = {}
+    # for i in split_message:
+    #     t = i.split(": ")
+    #     if(len(t) == 2):
+    #         request_header[t[0]] = t[1]
+
+    # content_type = request_header["Content-Type"]
+    # if(content_type == "application/x-www-form-urlencoded"): 
+        # url_path = RESOURCES + request_0[1][1:] + ".json"   
+    #deletion of file only supported
+    delete_url = LINK  + request_0[1][1:]
+
+    if(os.path.isfile(delete_url)):
+        os.remove(delete_url)
+        status_code = "200 OK"
+    else :
+        status_code = "404 Not Found"
+
+        
+    current_time = datetime.datetime.now()
+    response = "HTTP/1.1 " +status_code + "\r\n"
+    response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+    response += "Accept-Ranges: bytes\r\n"
+    response += "\r\n"
+    client_socket.send(response.encode())
+
+
+def handle_put_request(client_socket, message):
+    split_message = message[0].split("\r\n")
+    request_0 = split_message[0].split(" ")
+    
+    request_header = {}
+    for i in split_message:
+        t = i.split(": ")
+        if(len(t) == 2):
+            request_header[t[0]] = t[1]
+
+    content_type = request_header["Content-Type"]
+    if(content_type == "application/x-www-form-urlencoded"): 
+        url_path = LINK + request_0[1][1:] + ".json"       
+        url_path_dir = LINK + request_0[1][1:]
+        if(os.path.isfile(url_path)):
+            r_file = open(url_path, 'w')
+            r_file.write(parse_urlencoded(message[1]))
+            r_file.close()
+            status_code = "200 Ok"
+
+        elif(os.path.isdir(url_path_dir)):
+            put_uuid = str(uuid.uuid4())
+            put_path = url_path_dir +"/" + put_uuid + ".json"
+            r_file = open(put_path, 'w')
+            r_file.write(parse_urlencoded(message[1]))
+            r_file.close()
+            status_code = "201 Created"
+
+             
+        else:
+            status_code = "404 Not Found"
+        
+        current_time = datetime.datetime.now()
+        response = "HTTP/1.1 " +status_code + "\r\n"
+        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+        response += "Accept-Ranges: bytes\r\n"
+        response += "\r\n"
+        client_socket.send(response.encode())
 
 
 
 
 
-def handle_post_data(postdata):
+def parse_urlencoded(postdata):
     data = postdata.split("&")
     parameters = {}
     for param in data:
@@ -96,7 +165,6 @@ def handle_post_data(postdata):
     return json_data
 
 def handle_post_request(client_socket, message):
-    flag = 0
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     
@@ -109,7 +177,7 @@ def handle_post_request(client_socket, message):
     content_type = request_header["Content-Type"]
     if(content_type == "application/x-www-form-urlencoded"): 
     
-        json_response = handle_post_data(message[1])
+        json_response = parse_urlencoded(message[1])
         resource_id = str(uuid.uuid4())
         file_write = RESOURCES + resource_id + ".json"
         send_file_response = LINK + request_0[1][1:]
@@ -132,21 +200,17 @@ def handle_post_request(client_socket, message):
         if(not(os.path.exists(send_file_response))):
             status_code = "404 Not Found"
             content_type = "text/html"
-            flag = 1
         
         
         current_time = datetime.datetime.now()
         response = "HTTP/1.1 " +status_code + "\r\n"
         response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
         response += "Accept-Ranges: bytes\r\n"
-        # document_length = os.path.getsize(file_name)
-        # response += "Content-Length: " + str(document_length) + "\r\n"
         response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
         response += "\r\n"
         client_socket.send(response.encode())
         if(os.path.exists(send_file_response)):
             if(os.path.isdir(send_file_response)):
-                #send directoy details
                 client_socket.send(b"<html><head></head><body>Record Saved.</br>Requested url is a directory</body></html>")
             else:
                 r_file = open(send_file_response, "rb")
@@ -160,6 +224,8 @@ def handle_post_request(client_socket, message):
     else: 
 
         status_code ="415 Unsupported Media Type"
+        print(message[1])
+        print(content_type)
         current_time = datetime.datetime.now()
 
         response = "HTTP/1.1 " +status_code + "\r\n"
@@ -169,36 +235,19 @@ def handle_post_request(client_socket, message):
         client_socket.send(response.encode())
 
 
-
-
-def check_extention_type(temp_content_type):
-    if(len(temp_content_type) == 1):
-        status_code = "404 Not Found"
-        content_type = -1
-        #check can be a directory
-    elif(temp_content_type[1] == "html"):
-        content_type = "text/html"
-    elif(temp_content_type[1] == "jpg" or temp_content_type[1] == "jpeg" or temp_content_type[1] == "png"):
-        content_type = "image/" + temp_content_type[1]
-    elif(temp_content_type[1] == "mp3"):
-        content_type = "audio/mpeg"
-    elif(temp_content_type[1] == "mp4"):
-        content_type = "video" + temp_content_type[1]
-    
-    return content_type
     
 
 def handle_get_head_request(client_socket, split_message):
     request_0 = split_message[0].split(" ")
     #default_values    ------check if need to change
     content_type = "text/html"
-    status_code = "200 OK"
-    #request_0[0] defines method
-    #request_0[1] defines URL
-    #request_0[2] defines version
-    print("REQUEST {}".format(request_0))
+    status_code = "202 Accepted"
+    '''request_0[0] defines method
+    request_0[1] defines URL
+    request_0[2] defines version
+    print("REQUEST {}".format(request_0))'''
 
-    # check condition of bad request
+    # check condition of bad request and version 
 
     if('/' == request_0[1]):  
         #if this happen then try to find index.html
@@ -288,12 +337,15 @@ def threading(client_socket):
     # print("MESA000 {}".format(message))
 
     #note: sending split_message in get , as we dont require entity here
+    # handle directory here
     if("GET" in split_message[0] or "HEAD" in split_message[0]):
         handle_get_head_request(client_socket, split_message)
     elif("POST" in split_message[0]):
         handle_post_request(client_socket, message)
     elif("PUT" in split_message[0]):
         handle_put_request(client_socket, message)
+    elif("DELETE" in split_message[0]):
+        handle_delete_request(client_socket, message)
     else:
         print("something else")
     client_socket.shutdown(SHUT_WR)
