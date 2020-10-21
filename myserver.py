@@ -10,7 +10,6 @@ from urllib.parse import *	 # for parsing URL/URI
 import uuid
 
 
-
 #link
 LINK = "./htdocs/"
 RESOURCES = LINK + "resources/"
@@ -43,13 +42,10 @@ def handle_old_put_request(client_socket, message):
     #see the encoding thing properly
     split_message = message[0].split("\r\n")
     print("HEADERS {}".format(split_message))
-
     request_0 = split_message[0].split(" ")
     # print("MESSSAAAAGEE {}".format(message[1]))
-    
     file_name = LINK + request_0[1][1:]
     file_data = b"" + message[1]
-    # check1 = received_message = client_socket.recv(4092)
     #get length
     request_header = {}
     for i in split_message:
@@ -72,8 +68,6 @@ def handle_old_put_request(client_socket, message):
             file_data = file_data + data
     if(remainder != 0):
         data = client_socket.recv(SIZE)
-        # print("Enter {}".format(remainder))
-
 
         try:
             file_data += data
@@ -88,7 +82,6 @@ def handle_old_put_request(client_socket, message):
         r_file.close()
         status_code = "200 Not Found"
 
-
     elif(os.path.isdir(url_path)):
         put_uuid = str(uuid.uuid4())
         file_name = url_path + "/"+ put_uuid + "."+ content_type.split("/")[1]
@@ -96,13 +89,12 @@ def handle_old_put_request(client_socket, message):
         r_file.write(file_data)
         r_file.close()
         status_code = "201 Created"
-
     else:
         status_code = "404 Not Found"
-    response = "HTTP/1.1 " +status_code + "\r\n"
-    current_time = datetime.datetime.now()
-    response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-    response += "Accept-Ranges: bytes\r\n"
+
+    content_length = None
+    location = None
+    response = get_common_response(status_code,content_type,content_length,location) 
     response += "\r\n"
     client_socket.send(response.encode())
 
@@ -110,20 +102,16 @@ def handle_delete_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     print("MASSS {}".format(message))
-    
     delete_url = LINK  + request_0[1][1:]
-
     if(os.path.isfile(delete_url)):
         os.remove(delete_url)
         status_code = "200 OK"
     else :
         status_code = "404 Not Found"
-
-        
-    current_time = datetime.datetime.now()
-    response = "HTTP/1.1 " +status_code + "\r\n"
-    response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-    response += "Accept-Ranges: bytes\r\n"
+    content_type = None
+    content_length = None
+    location = None
+    response = get_common_response(status_code,content_type,content_length,location)   
     response += "\r\n"
     client_socket.send(response.encode())
 
@@ -158,11 +146,10 @@ def handle_put_request(client_socket, message):
              
         else:
             status_code = "404 Not Found"
-        
-        current_time = datetime.datetime.now()
-        response = "HTTP/1.1 " +status_code + "\r\n"
-        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-        response += "Accept-Ranges: bytes\r\n"
+
+        content_length = None
+        location = None
+        response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
         client_socket.send(response.encode())
     elif(content_type == "text/plain"):
@@ -183,18 +170,15 @@ def handle_put_request(client_socket, message):
         else: 
             status_code = "404 Not Found"
 
-        current_time = datetime.datetime.now()
-        response = "HTTP/1.1 " +status_code + "\r\n"
-        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-        response += "Accept-Ranges: bytes\r\n"
+        content_length = None
+        location = None
+        response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
         client_socket.send(response.encode())
     elif(content_type == "image/png" or content_type == "image/jpg"):
         handle_old_put_request(client_socket, message)
 
     
-
-
 
 def parse_urlencoded(postdata):
     data = postdata.split("&")
@@ -204,7 +188,7 @@ def parse_urlencoded(postdata):
         parameters[str(divide[0])] = divide[1]
     json_data = json.dumps(parameters)
     return json_data
-
+#dont do that redirect post-shit
 def handle_post_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
@@ -229,7 +213,6 @@ def handle_post_request(client_socket, message):
             status_code = "200 OK"
             content_type = "text/html"
             r_file = open(file_write, 'a')
-            
 
         elif(not(os.path.exists(file_write))):
             status_code = "201 Created"
@@ -244,12 +227,9 @@ def handle_post_request(client_socket, message):
             status_code = "404 Not Found"
             content_type = "text/html"
         
-        
-        current_time = datetime.datetime.now()
-        response = "HTTP/1.1 " +status_code + "\r\n"
-        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-        response += "Accept-Ranges: bytes\r\n"
-        response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
+        content_length = None
+        location = None
+        response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
         client_socket.send(response.encode())
         if(os.path.exists(send_file_response)):
@@ -279,12 +259,11 @@ def handle_post_request(client_socket, message):
         else:
             status_code = "404 Not Found"
 
+        content_type = "multipart/form-data"
+        content_length = None
+        location = None
+        response = get_common_response(status_code,content_type,content_length,location)
 
-        current_time = datetime.datetime.now()
-        response = "HTTP/1.1 " +status_code + "\r\n"
-        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-        response += "Accept-Ranges: bytes\r\n"
-        # response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
         response += "\r\n"
         client_socket.send(response.encode())
 
@@ -293,15 +272,17 @@ def handle_post_request(client_socket, message):
         status_code ="415 Unsupported Media Type"
         print(message[1])
         print(content_type)
-        current_time = datetime.datetime.now()
+        # current_time = datetime.datetime.now()
+        # content_type = None
+        content_length = None
+        location = None
+        response = get_common_response(status_code,content_type,content_length,location)
 
-        response = "HTTP/1.1 " +status_code + "\r\n"
-        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-        response += "Accept-Ranges: bytes\r\n"
+        # response = "HTTP/1.1 " +status_code + "\r\n"
+        # response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+        # response += "Accept-Ranges: bytes\r\n"
         response += "\r\n"
         client_socket.send(response.encode())
-
-
     
 
 def handle_get_head_request(client_socket, split_message):
@@ -343,13 +324,6 @@ def handle_get_head_request(client_socket, split_message):
     if os.path.exists(file_name):
         status_code = "200 OK"
         r_file = open(file_name, 'rb')
-
-        # current_time = datetime.datetime.now()
-        # response = "HTTP/1.1 " +status_code + "\r\n"
-        # response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-        # response += "Accept-Ranges: bytes\r\n"
-        # response += "Content-Length: " + str(document_length) + "\r\n"
-        # response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
         document_length = os.path.getsize(file_name)
         content_length = str(document_length)
         
