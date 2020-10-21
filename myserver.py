@@ -22,6 +22,22 @@ def check_version(version):
         return -1
     else:
         return "505 HTTP Version Not Supported"
+def get_common_response(status_code,content_type,content_length,location):
+    current_time = datetime.datetime.now()
+    response = "HTTP/1.1 " +status_code + "\r\n"
+    response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+    response += "Accept-Ranges: bytes\r\n"
+    response += "Server: Deepika\r\n"
+    if(content_type):
+        response += "Content-Type: " + content_type + "; charset-utf-8\r\n"
+
+    if(content_length):
+        response += "Content-Length: " + content_length + "\r\n"
+
+    if(location):
+        response += "Location: " + location + "\r\n"
+
+    return response
 
 def handle_old_put_request(client_socket, message):
     #see the encoding thing properly
@@ -293,6 +309,7 @@ def handle_get_head_request(client_socket, split_message):
     #default_values    ------check if need to change
     content_type = "text/html"
     status_code = "202 Accepted"
+    location = None
     '''request_0[0] defines method
     request_0[1] defines URL
     request_0[2] defines version
@@ -307,7 +324,7 @@ def handle_get_head_request(client_socket, split_message):
 
     else:
         file_name = LINK + request_0[1][1:]
-        print("somethingelse requested: {}".format(file_name))
+        # print("somethingelse requested: {}".format(file_name))
         #check for type of file:
         temp_content_type = request_0[1].split(".")
         if(len(temp_content_type) == 1):
@@ -326,13 +343,17 @@ def handle_get_head_request(client_socket, split_message):
     if os.path.exists(file_name):
         status_code = "200 OK"
         r_file = open(file_name, 'rb')
-        current_time = datetime.datetime.now()
-        response = "HTTP/1.1 " +status_code + "\r\n"
-        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-        response += "Accept-Ranges: bytes\r\n"
+
+        # current_time = datetime.datetime.now()
+        # response = "HTTP/1.1 " +status_code + "\r\n"
+        # response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
+        # response += "Accept-Ranges: bytes\r\n"
+        # response += "Content-Length: " + str(document_length) + "\r\n"
+        # response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
         document_length = os.path.getsize(file_name)
-        response += "Content-Length: " + str(document_length) + "\r\n"
-        response += "Content-Type: " +content_type +"; charset-utf-8\r\n"
+        content_length = str(document_length)
+        
+        response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
         if("image" in content_type or "video" in content_type or "audio" in content_type):
             file_data = b""
@@ -340,25 +361,19 @@ def handle_get_head_request(client_socket, split_message):
             while(b != b""):
                 file_data += b
                 b = r_file.read(1)
-            # print("FILE: {}".format(file_data))
         else:
             file_data = r_file.read(document_length)
 
         r_file.close()
-        print("Ffd {}".format(response))
-        # client_socket.send(response.encode())
 
     else:
         status_code = "404 Not Found"
-        response = "HTTP/1.1 " + status_code +"\r\n"
-        error_file = LINK + "error.html"
-        r_file = open(error_file, 'rb')
-        document_length = os.path.getsize(error_file)
-        current_time = datetime.datetime.now()
-        response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-
-        response += "Content-Length: " + str(document_length) + "\r\n"
-        response += "Content-Type: text/html; charset-utf-8\r\n"
+        file_name = LINK + "error.html"
+        r_file = open(file_name, 'rb')
+        document_length = os.path.getsize(file_name)
+        content_length = str(document_length)
+        content_type = "text/html"
+        response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
         file_data = r_file.read(document_length)
         r_file.close()
@@ -369,15 +384,17 @@ def handle_get_head_request(client_socket, split_message):
 
 
 def threading(client_socket):
+    # while(True):
     #decide the size
-    received_message = client_socket.recv(SIZE*100)
-    print("REC {}".format(received_message))  
+    received_message = client_socket.recv(SIZE)
+    # print("REC {}".format(received_message))  
     try:
         received_message = received_message.decode('utf-8')
         message = received_message.split("\r\n\r\n")
 
         # print("STUDY {}".format(received_message))
     except UnicodeDecodeError:
+        
         message = received_message.split(b"\r\n\r\n")
         # print("MESA000 {}".format(message[0]))
         message[0] = message[0].decode(errors = 'ignore')
@@ -400,6 +417,8 @@ def threading(client_socket):
     else:
         print("something else")
     client_socket.shutdown(SHUT_WR)
+    # client_socket.close()
+
 
 def create_server(port):
     server_socket = socket(AF_INET, SOCK_STREAM)
@@ -412,10 +431,8 @@ def create_server(port):
             client_socket, client_address = server_socket.accept()
             # print("clientSocket {} and client address {}".format(client_socket,client_address))
 
-            #threadinnggg
-            # threading(client_socket)
             start_new_thread(threading,(client_socket,)) 
-        # server_socket.close()    #check whether hoga ya nhi
+        server_socket.close()    #check whether hoga ya nhi
         
     except KeyboardInterrupt:
         print("Closing....")

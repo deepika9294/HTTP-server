@@ -1,7 +1,0 @@
-----------------------------747918939877890391648408
-Content-Disposition: form-data; name="name"joww
-----------------------------747918939877890391648408
-Content-Disposition: form-data; name="lastname"dow
-----------------------------747918939877890391648408
-Content-Disposition: form-data; name="file"; filename="Screenshot from 2020-10-16 10-25-46.png"
-Content-Type: image/png
