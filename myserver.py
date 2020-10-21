@@ -201,7 +201,6 @@ def handle_post_request(client_socket, message):
 
     content_type = request_header["Content-Type"]
     print(content_type)
-    print("$$$$$$$$$$$")
     if(content_type == "application/x-www-form-urlencoded"): 
     
         json_response = parse_urlencoded(message[1])
@@ -211,80 +210,76 @@ def handle_post_request(client_socket, message):
 
         if(os.path.exists(file_write)):
             status_code = "200 OK"
-            content_type = "text/html"
-            r_file = open(file_write, 'a')
 
         elif(not(os.path.exists(file_write))):
             status_code = "201 Created"
-            content_type = "text/html"
             #create file
-            r_file = open(file_write, 'w')
 
+        content_type = "text/html"
+        r_file = open(file_write, 'w')
         r_file.write(str(json_response))
         r_file.close()
-        print(send_file_response)
-        if(not(os.path.exists(send_file_response))):
-            status_code = "404 Not Found"
-            content_type = "text/html"
+        # print(send_file_response)
+
+        # if(not(os.path.exists(send_file_response))):
+        #     status_code = "404 Not Found"
+        #     content_type = "text/html"
         
         content_length = None
         location = None
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
         client_socket.send(response.encode())
-        if(os.path.exists(send_file_response)):
-            if(os.path.isdir(send_file_response)):
-                client_socket.send(b"<html><head></head><body>Record Saved.</br>Requested url is a directory</body></html>")
-            else:
-                r_file = open(send_file_response, "rb")
-                client_socket.sendfile(r_file)
-                r_file.close()
-        else:
-            send_file_response = LINK + "error.html"
-            r_file = open(send_file_response, "rb")
-            client_socket.sendfile(r_file)
-            r_file.close()
-    elif("multipart/form-data" in content_type):
-        print(message)
-        print("-------------")
-        print(message[1])
-        post_url = RESOURCES + str(uuid.uuid4()) +".txt"
-        request_url = LINK + request_0[1][1:]
-        if(os.path.exists(request_url)):
-            r_file = open(post_url, "w")
-            for i in range(1,len(message)):
-                r_file.write(message[i])
-            r_file.close()
-            status_code = "200 Ok"
-        else:
-            status_code = "404 Not Found"
+        client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
 
-        content_type = "multipart/form-data"
-        content_length = None
-        location = None
-        response = get_common_response(status_code,content_type,content_length,location)
+        # if(os.path.exists(send_file_response)):
+        #     if(os.path.isdir(send_file_response)):
+        #         client_socket.send(b"<html><head></head><body>Record Saved.</br>Requested url is a directory</body></html>")
+        #     else:
+        #         r_file = open(send_file_response, "rb")
+        #         client_socket.sendfile(r_file)
+        #         r_file.close()
+        # else:
+        #     send_file_response = LINK + "error.html"
+        #     r_file = open(send_file_response, "rb")
+        #     client_socket.sendfile(r_file)
+        #     r_file.close()
+    # elif("multipart/form-data" in content_type):
+    #     print(message)
+    #     print("-------------")
+    #     print(message[1])
+    #     post_url = RESOURCES + str(uuid.uuid4()) +".txt"
+    #     request_url = LINK + request_0[1][1:]
+    #     if(os.path.exists(request_url)):
+    #         r_file = open(post_url, "w")
+    #         for i in range(1,len(message)):
+    #             r_file.write(message[i])
+    #         r_file.close()
+    #         status_code = "200 Ok"
+    #     else:
+    #         status_code = "404 Not Found"
 
-        response += "\r\n"
-        client_socket.send(response.encode())
+    #     content_type = "multipart/form-data"
+    #     content_length = None
+    #     location = None
+    #     response = get_common_response(status_code,content_type,content_length,location)
+
+    #     response += "\r\n"
+    #     client_socket.send(response.encode())
 
     else: 
 
         status_code ="415 Unsupported Media Type"
         print(message[1])
         print(content_type)
-        # current_time = datetime.datetime.now()
-        # content_type = None
         content_length = None
         location = None
         response = get_common_response(status_code,content_type,content_length,location)
 
-        # response = "HTTP/1.1 " +status_code + "\r\n"
-        # response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
-        # response += "Accept-Ranges: bytes\r\n"
         response += "\r\n"
         client_socket.send(response.encode())
     
-
+#handle directory case
 def handle_get_head_request(client_socket, split_message):
     request_0 = split_message[0].split(" ")
     #default_values    ------check if need to change
