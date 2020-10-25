@@ -1,0 +1,52 @@
+2020-10-25 08:06:44,792:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 08:06:45,731:myserver.py:	GET /public/ipsum.html HTTP/1.1	200 OK
+
+2020-10-25 08:06:47,943:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-10-25 08:06:50,358:myserver.py:	GET /public/video.html HTTP/1.1	200 OK
+
+2020-10-25 08:06:51,048:myserver.py:	GET /videos/video.mp4 HTTP/1.1	200 OK
+
+2020-10-25 08:23:00,758:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 08:23:02,162:myserver.py:	GET /public/images.html HTTP/1.1	200 OK
+
+2020-10-25 08:23:02,351:myserver.py:	GET /images/image.gif HTTP/1.1	200 OK
+
+2020-10-25 08:23:02,359:myserver.py:	GET /images/image.bmp HTTP/1.1	200 OK
+
+2020-10-25 08:23:02,418:myserver.py:	GET /images/image.png HTTP/1.1	200 OK
+
+2020-10-25 08:23:02,593:myserver.py:	GET /images/image.jpg HTTP/1.1	200 OK
+
+2020-10-25 08:23:04,083:myserver.py:	GET /public/ipsum.html HTTP/1.1	200 OK
+
+2020-10-25 08:23:05,783:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-10-25 08:23:07,449:myserver.py:	GET /public/audio.html HTTP/1.1	200 OK
+
+2020-10-25 08:23:09,526:myserver.py:	GET /sounds/sound.mp3 HTTP/1.1	200 OK
+
+2020-10-25 08:23:17,131:myserver.py:	GET /private/file.html HTTP/1.1	200 OK
+
+2020-10-25 08:23:22,698:myserver.py:	GET /private/file.html HTTP/1.1	200 OK
+
+2020-10-25 08:23:25,529:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-10-25 08:25:13,820:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-10-25 08:25:17,049:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 08:25:22,778:myserver.py:	GET /public/ipsum.html HTTP/1.1	200 OK
+
+2020-10-25 08:25:25,684:myserver.py:	GET /public/audio.html HTTP/1.1	200 OK
+
+2020-10-25 08:25:27,946:myserver.py:	GET /sounds/sound.mp3 HTTP/1.1	200 OK
+
+2020-10-25 08:26:18,091:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-10-25 08:26:22,643:myserver.py:	GET /public/audio.html HTTP/1.1	200 OK
+
+2020-10-25 08:26:24,905:myserver.py:	GET /sounds/sound.mp3 HTTP/1.1	200 OK
+
