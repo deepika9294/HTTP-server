@@ -9,6 +9,7 @@ import json
 from urllib.parse import *	 # for parsing URL/URI
 import uuid
 import logging
+import base64
 
 
 #link
@@ -16,6 +17,8 @@ LINK = "./htdocs/"
 RESOURCES = LINK + "resources/"
 SIZE = 1024
 LOGGING = LINK + "data.log"
+USERNAME = "deepika"
+PASSWORD = "root"
 logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctime)s:%(filename)s:%(message)s')
 
 
@@ -42,7 +45,7 @@ def get_common_response(status_code,content_type,content_length,location):
 
     return response
 
-def handle_old_put_request(client_socket, message):
+def handle_binary_put_request(client_socket, message):
     #see the encoding thing properly
     split_message = message[0].split("\r\n")
     print("HEADERS {}".format(split_message))
@@ -100,24 +103,78 @@ def handle_old_put_request(client_socket, message):
     location = file_name
     response = get_common_response(status_code,content_type,content_length,location) 
     response += "\r\n"
+    logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
     client_socket.send(response.encode())
 
 def handle_delete_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
-    print("MASSS {}".format(message))
-    delete_url = LINK  + request_0[1][1:]
-    if(os.path.isfile(delete_url)):
-        os.remove(delete_url)
-        status_code = "200 OK"
-    else :
-        status_code = "404 Not Found"
-    content_type = None
-    content_length = None
-    location = None
-    response = get_common_response(status_code,content_type,content_length,location)   
-    response += "\r\n"
-    client_socket.send(response.encode())
+    request_header = {}
+    if(len(message[1]) != 0):
+        status_code = "400 Bad Request"
+        file_name = LINK + "badrequest.html"
+        content_type = "text/html"
+        r_file = open(file_name, 'rb')
+        document_length = os.path.getsize(file_name)
+        location = None
+        response = get_common_response(status_code,content_type,str(document_length),location)
+ 
+        response += "\r\n"
+        file_data = r_file.read(document_length)
+        r_file.close()
+        logging.info('	{}	{}\n'.format(split_message[0], status_code))
+
+        client_socket.send(response.encode())
+        client_socket.send(file_data)
+        return
+
+
+    for i in split_message:
+        t = i.split(": ")
+        if(len(t) == 2):
+            request_header[t[0]] = t[1]
+    # print(request_header)
+    
+    if("Authorization" in request_header.keys()):
+        auth = request_header['Authorization']
+        auth = auth.split(' ')
+        auth = base64.decodebytes(auth[1].encode()).decode()
+        auth = auth.split(':')
+        # print("MASSS {}".format(auth))
+        if(USERNAME == auth[0] and PASSWORD == auth[1]):
+            delete_url = LINK  + request_0[1][1:]
+            if(os.path.isfile(delete_url)):
+                os.remove(delete_url)
+                status_code = "200 OK"
+            else :
+                status_code = "404 Not Found"
+            content_type = None
+            content_length = None
+            location = delete_url
+            response = get_common_response(status_code,content_type,content_length,location)   
+            response += "\r\n"
+            logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+            client_socket.send(response.encode())
+        else:
+            status_code = "401 Unauthorized"
+            content_type = None
+            content_length = None
+            location = None
+            response = get_common_response(status_code,content_type,content_length,location)   
+            response += "\r\n"
+            logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+            client_socket.send(response.encode())
+    else: 
+        #check whether this or 403
+        status_code = "401 Unauthorized"
+        content_type = None
+        content_length = None
+        location = None
+        response = get_common_response(status_code,content_type,content_length,location)   
+        response += "\r\n"
+        logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+        client_socket.send(response.encode())
+
 
 
 def handle_put_request(client_socket, message):
@@ -157,6 +214,8 @@ def handle_put_request(client_socket, message):
         content_length = None
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
+        logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+
         client_socket.send(response.encode())
     elif(content_type == "text/plain"):
         url_path = LINK + request_0[1][1:]        
@@ -183,9 +242,11 @@ def handle_put_request(client_socket, message):
         content_length = None
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
+        logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+
         client_socket.send(response.encode())
     elif(content_type == "image/png" or content_type == "image/jpg"):
-        handle_old_put_request(client_socket, message)
+        handle_binary_put_request(client_socket, message)
 
     
 
@@ -235,9 +296,11 @@ def handle_post_request(client_socket, message):
         #     content_type = "text/html"
         
         content_length = None
-        location = None
+        location = file_write
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
+        logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+
         client_socket.send(response.encode())
         client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
 
@@ -286,6 +349,8 @@ def handle_post_request(client_socket, message):
         response = get_common_response(status_code,content_type,content_length,location)
 
         response += "\r\n"
+        logging.info('	{}	{}\n'.format(split_message[0], status_code))
+
         client_socket.send(response.encode())
     
 #handle directory case
@@ -315,7 +380,7 @@ def handle_get_head_request(client_socket, message):
         response += "\r\n"
         file_data = r_file.read(document_length)
         r_file.close()
-        print(response)
+        logging.info('	{}	{}\n'.format(split_message[0], status_code))
         client_socket.send(response.encode())
         if("GET" == request_0[0]):
             client_socket.send(file_data)
@@ -345,7 +410,7 @@ def handle_get_head_request(client_socket, message):
             content_type = "video" + temp_content_type[1]
 
 
-    if os.path.exists(file_name):
+    if os.path.isfile(file_name):
         status_code = "200 OK"
         r_file = open(file_name, 'rb')
         document_length = os.path.getsize(file_name)
