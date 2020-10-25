@@ -250,3 +250,31 @@
 
 2020-10-25 10:55:08,455:myserver.py:	PUT / HTTP/1.1	201 Created  ./htdocs//2c8950f4-564c-4f49-b108-77a12772f12a.txt
 
+2020-10-25 22:30:23,446:myserver.py:	GET / HTTP/1.1	400 Bad Request
+
+2020-10-25 22:30:33,702:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 22:30:42,600:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 22:30:51,428:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 22:34:23,576:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 22:34:26,941:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 22:35:16,124:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 23:03:56,951:myserver.py:	GET /resources/392eceaf-8738-4898-bfcc-d60b731f63b0.json HTTP/1.1	200 OK
+
+2020-10-25 23:04:26,972:myserver.py:	DELETE /resources/392eceaf-8738-4898-bfcc-d60b731f63b0.json HTTP/1.1	200 OK  ./htdocs/resources/392eceaf-8738-4898-bfcc-d60b731f63b0.json
+
+2020-10-25 23:04:40,611:myserver.py:	GET /resources/392eceaf-8738-4898-bfcc-d60b731f63b0.json HTTP/1.1	404 Not Found
+
+2020-10-25 23:04:50,065:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 23:05:08,718:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 23:07:13,237:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 23:07:17,365:myserver.py:	GET / HTTP/1.1	200 OK
+

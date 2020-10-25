@@ -29,12 +29,13 @@ def check_version(version):
         return -1
     else:
         return "505 HTTP Version Not Supported"
-def get_common_response(status_code,content_type,content_length,location,cookie=None):
+def get_common_response(status_code,content_type,content_length,location,set_cookie=None, cookie=None):
     current_time = datetime.datetime.now()
     response = "HTTP/1.1 " +status_code + "\r\n"
+    if(set_cookie):
+        response += "Set-Cookie: " + "cookieid=" +set_cookie+ "; "+"Max-Age=60\r\n"
     if(cookie):
-        response += "Set-Cookie: " + "cookieid=" +cookie+ "; "+"Max-Age=60\r\n"
-
+        response += "Cookie: " + cookie +"\r\n"
     response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
     response += "Accept-Ranges: bytes\r\n"
     response += "Server: Deepika\r\n"
@@ -114,6 +115,17 @@ def handle_delete_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     request_header = {}
+    for i in split_message:
+        t = i.split(": ")
+        if(len(t) == 2):
+            request_header[t[0]] = t[1]
+
+    cookie = None
+    set_cookie = None
+    if("Cookie" in request_header.keys()):
+        cookie = request_header["Cookie"]
+    else:
+        set_cookie = str(random.randint(10000,50000))
     if(len(message[1]) != 0):
         status_code = "400 Bad Request"
         file_name = LINK + "badrequest.html"
@@ -133,10 +145,7 @@ def handle_delete_request(client_socket, message):
         return
 
 
-    for i in split_message:
-        t = i.split(": ")
-        if(len(t) == 2):
-            request_header[t[0]] = t[1]
+    
     # print(request_header)
     
     if("Authorization" in request_header.keys()):
@@ -155,7 +164,7 @@ def handle_delete_request(client_socket, message):
             content_type = None
             content_length = None
             location = delete_url
-            response = get_common_response(status_code,content_type,content_length,location)   
+            response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)   
             response += "\r\n"
             logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
             client_socket.send(response.encode())
@@ -361,10 +370,9 @@ def handle_post_request(client_socket, message):
 def handle_get_head_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
-    is_cookie = False
-    # cookie= str(uuid.uuid4())[0:8]
-    cookie = str(random.randint(10000,50000))
-    print("COOKIE {}".format(cookie))
+    # is_cookie = False
+    cookie = None
+    set_cookie = None
     request_header = {}
     for i in split_message:
         t = i.split(": ")
@@ -373,7 +381,11 @@ def handle_get_head_request(client_socket, message):
     print(request_header)
     #default_values    ------check if need to change
     if("Cookie" in request_header):
-        is_cookie = True
+        cookie = request_header["Cookie"]
+    else:
+        set_cookie = str(random.randint(10000,50000))
+
+        
     content_type = "text/html"
     status_code = "202 Accepted"
     location = None
@@ -431,9 +443,7 @@ def handle_get_head_request(client_socket, message):
         r_file = open(file_name, 'rb')
         document_length = os.path.getsize(file_name)
         content_length = str(document_length)
-        if(is_cookie):
-            cookie: None
-        response = get_common_response(status_code,content_type,content_length,location,cookie)
+        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
         response += "\r\n"
         print(response)
         if("image" in content_type or "video" in content_type or "audio" in content_type):
