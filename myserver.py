@@ -10,6 +10,7 @@ from urllib.parse import *	 # for parsing URL/URI
 import uuid
 import logging
 import base64
+import random
 
 
 #link
@@ -28,9 +29,12 @@ def check_version(version):
         return -1
     else:
         return "505 HTTP Version Not Supported"
-def get_common_response(status_code,content_type,content_length,location):
+def get_common_response(status_code,content_type,content_length,location,cookie=None):
     current_time = datetime.datetime.now()
     response = "HTTP/1.1 " +status_code + "\r\n"
+    if(cookie):
+        response += "Set-Cookie: " + "cookieid=" +cookie+ "; "+"Max-Age=60\r\n"
+
     response += ("Date: " + current_time.strftime("%A") + ", "+ current_time.strftime("%d") + " " +  current_time.strftime("%b") + " " + current_time.strftime("%Y") + " " + current_time.strftime("%X") + " GMT\n")
     response += "Accept-Ranges: bytes\r\n"
     response += "Server: Deepika\r\n"
@@ -357,7 +361,19 @@ def handle_post_request(client_socket, message):
 def handle_get_head_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
+    is_cookie = False
+    # cookie= str(uuid.uuid4())[0:8]
+    cookie = str(random.randint(10000,50000))
+    print("COOKIE {}".format(cookie))
+    request_header = {}
+    for i in split_message:
+        t = i.split(": ")
+        if(len(t) == 2):
+            request_header[t[0]] = t[1]
+    print(request_header)
     #default_values    ------check if need to change
+    if("Cookie" in request_header):
+        is_cookie = True
     content_type = "text/html"
     status_code = "202 Accepted"
     location = None
@@ -415,9 +431,11 @@ def handle_get_head_request(client_socket, message):
         r_file = open(file_name, 'rb')
         document_length = os.path.getsize(file_name)
         content_length = str(document_length)
-        
-        response = get_common_response(status_code,content_type,content_length,location)
+        if(is_cookie):
+            cookie: None
+        response = get_common_response(status_code,content_type,content_length,location,cookie)
         response += "\r\n"
+        print(response)
         if("image" in content_type or "video" in content_type or "audio" in content_type):
             file_data = b""
             b = r_file.read(1)

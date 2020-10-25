@@ -88,3 +88,165 @@
 
 2020-10-25 09:16:12,301:myserver.py:	GET /resources/3270300e-19c8-4218-ad8f-5fee9d2a3035.json HTTP/1.1	400 Bad Request
 
+2020-10-25 09:48:56,824:myserver.py:	GET / HTTP/1.1	400 Bad Request
+
+2020-10-25 09:49:06,590:myserver.py:	GET / HTTP/1.1	400 Bad Request
+
+2020-10-25 09:49:52,970:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 09:50:13,848:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 09:50:29,113:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 09:51:14,085:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 09:51:33,794:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 09:53:55,800:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 09:54:11,819:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 09:54:37,662:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 09:58:04,463:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:00:10,297:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:00:22,354:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:00:27,411:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:00:44,351:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:06:39,819:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:06:39,941:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-10-25 10:06:47,638:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:06:51,179:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:06:54,351:myserver.py:	GET /public/ipsum.html HTTP/1.1	200 OK
+
+2020-10-25 10:08:13,559:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:09:49,318:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:09:54,098:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:09:54,192:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-10-25 10:10:49,948:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:11:43,017:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:12:41,653:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:14:32,170:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:16:23,507:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:17:06,609:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:18:31,427:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:18:53,281:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:19:14,626:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:25:33,516:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:26:36,995:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:28:00,803:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:28:03,050:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:28:58,001:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:29:15,888:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:29:48,589:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:29:51,326:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:30:14,232:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:30:52,493:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:30:55,430:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:31:01,674:myserver.py:	GET /public/ipsum.html HTTP/1.1	200 OK
+
+2020-10-25 10:31:21,030:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:31:26,141:myserver.py:	GET /public/images.html HTTP/1.1	200 OK
+
+2020-10-25 10:31:26,221:myserver.py:	GET /images/image.bmp HTTP/1.1	200 OK
+
+2020-10-25 10:31:26,235:myserver.py:	GET /images/image.gif HTTP/1.1	200 OK
+
+2020-10-25 10:31:26,326:myserver.py:	GET /images/image.png HTTP/1.1	200 OK
+
+2020-10-25 10:31:26,532:myserver.py:	GET /images/image.jpg HTTP/1.1	200 OK
+
+2020-10-25 10:31:26,560:myserver.py:	GET /images/image.bmp HTTP/1.1	200 OK
+
+2020-10-25 10:31:26,601:myserver.py:	GET /images/image.gif HTTP/1.1	200 OK
+
+2020-10-25 10:31:30,252:myserver.py:	GET /images/image.gif HTTP/1.1	200 OK
+
+2020-10-25 10:31:30,252:myserver.py:	GET /images/image.bmp HTTP/1.1	200 OK
+
+2020-10-25 10:32:48,327:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:33:51,145:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:34:35,567:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:34:59,974:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:35:20,520:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:39:39,017:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:39:55,843:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:39:57,135:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:39:58,203:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:39:58,392:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:39:58,587:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:40:08,378:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:40:10,023:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:40:11,288:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:40:19,737:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:40:50,367:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:41:25,219:myserver.py:	GET /index.html HTTP/1.1	200 OK
+
+2020-10-25 10:41:25,340:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-10-25 10:41:49,417:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:45:24,332:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:45:36,103:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:51:26,992:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:51:48,269:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:51:58,261:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 10:53:36,535:myserver.py:	POST / HTTP/1.1	201 Created  ./htdocs/resources/392eceaf-8738-4898-bfcc-d60b731f63b0.json
+
+2020-10-25 10:55:08,455:myserver.py:	PUT / HTTP/1.1	201 Created  ./htdocs//2c8950f4-564c-4f49-b108-77a12772f12a.txt
+
