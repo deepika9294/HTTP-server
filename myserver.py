@@ -11,17 +11,20 @@ import uuid
 import logging
 import base64
 import random
+from config import *
+
 
 
 #link
-LINK = "./htdocs/"
-RESOURCES = LINK + "resources/"
-SIZE = 1024
-LOGGING = LINK + "data.log"
-USERNAME = "deepika"
-PASSWORD = "root"
+# LINK = "./htdocs/"
+# RESOURCES = LINK + "resources/"
+# SIZE = 1024
+# LOGGING = LINK + "data.log"
+# USERNAME = "deepika"
+# PASSWORD = "root"
 logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctime)s:%(filename)s:%(message)s')
 
+# check versions and return accordingly in the starting
 
 def check_version(version):
     print(version)
@@ -29,6 +32,7 @@ def check_version(version):
         return -1
     else:
         return "505 HTTP Version Not Supported"
+
 def get_common_response(status_code,content_type,content_length,location,set_cookie=None, cookie=None):
     current_time = datetime.datetime.now()
     response = "HTTP/1.1 " +status_code + "\r\n"
@@ -251,6 +255,8 @@ def handle_put_request(client_socket, message):
 
         else: 
             status_code = "404 Not Found"
+            location =None
+            # print(url_path)
 
         content_length = None
         response = get_common_response(status_code,content_type,content_length,location)

@@ -278,3 +278,17 @@
 
 2020-10-25 23:07:17,365:myserver.py:	GET / HTTP/1.1	200 OK
 
+2020-10-25 23:15:14,046:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-10-25 23:15:35,283:myserver.py:	PUT /resources HTTP/1.1	201 Created  ./htdocs/resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt
+
+2020-10-25 23:18:35,515:myserver.py:	PUT /resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt%0A HTTP/1.1	404 Not Found  None
+
+2020-10-25 23:19:48,810:myserver.py:	PUT /resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt%0A HTTP/1.1	404 Not Found  None
+
+2020-10-25 23:19:55,309:myserver.py:	PUT /resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt%0A HTTP/1.1	404 Not Found  None
+
+2020-10-25 23:20:10,246:myserver.py:	PUT /resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt%0A HTTP/1.1	404 Not Found  None
+
+2020-10-25 23:20:18,586:myserver.py:	PUT /resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt HTTP/1.1	200 Ok  ./htdocs/resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt
+
