@@ -392,18 +392,19 @@ def handle_post_request(client_socket, message, ):
 
         post_url = RESOURCES + str(uuid.uuid4()) +".txt"
         request_url = LINK + request_0[1][1:]
-        if(os.path.exists(request_url)):
-            r_file = open(post_url, "w")
-            for i in range(0,len(data)):
-                r_file.write(data[i])
-            r_file.close()
-            status_code = "200 Ok"
-        else:
-            status_code = "404 Not Found"
+        # dont check here for file exist
+        # if(os.path.exists(request_url)):
+        r_file = open(post_url, "w")
+        for i in range(0,len(data)):
+            r_file.write(data[i])
+        r_file.close()
+        status_code = "200 Ok"
+        # else:
+        #     status_code = "404 Not Found"
 
         content_type = "multipart/form-data"
-        content_length = None
-        location = None
+        content_length = content_length
+        location = post_url
         response = get_common_response(status_code,content_type,content_length,location)
 
         response += "\r\n"
@@ -542,9 +543,9 @@ def threading(client_socket,client_address):
     #decide the size
     received_message = client_socket.recv(SIZE)
     w = open(LOGGING, "a")
-    # print("------------------------------------------------------- {}".format(SIZE))
-    # print("REC {}".format(received_message))  
-    # print("---------------------------------------------------------------------")
+    print("------------------------------------------------------- {}".format(SIZE))
+    print("REC {}".format(received_message))  
+    print("---------------------------------------------------------------------")
     try:
         received_message = received_message.decode('utf-8')
         message = received_message.split("\r\n\r\n")
@@ -598,7 +599,7 @@ def create_server(port):
     except KeyboardInterrupt:
         print("Closing....")
     except Exception as exc :
-         print("ERROR")
+         print("ERROR1")
          print(exc) 
     
     server_socket.close()

@@ -292,3 +292,107 @@
 
 2020-10-25 23:20:18,586:myserver.py:	PUT /resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt HTTP/1.1	200 Ok  ./htdocs/resources/923405b5-b9eb-448a-baed-3a3c7d704a71.txt
 
+2020-11-09 07:14:12,695:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-09 07:14:13,012:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-11-09 07:15:38,992:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-09 07:16:08,861:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-09 07:16:10,733:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:19:02,221:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-09 07:19:02,382:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-11-09 07:19:04,304:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:19:46,145:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:19:56,646:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:19:56,692:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-11-09 07:20:01,922:myserver.py:	POST /form HTTP/1.1	201 Created  ./htdocs/resources/36c45854-0304-46a6-8828-5571501181df.json
+
+2020-11-09 07:21:07,852:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:21:27,619:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:21:29,067:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:22:41,754:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:23:39,258:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:23:50,317:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:24:23,417:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:24:23,493:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-11-09 07:25:01,285:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-11-09 07:25:01,869:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:25:01,914:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-11-09 07:25:27,721:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-11-09 07:25:28,260:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:25:28,303:myserver.py:	GET /favicon.ico HTTP/1.1	200 OK
+
+2020-11-09 07:25:31,198:myserver.py:	POST /form HTTP/1.1	201 Created  ./htdocs/resources/ae6b10a4-455e-4ede-af10-cdc9fcbacba1.json
+
+2020-11-09 07:27:19,970:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:27:35,455:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:29:24,616:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:31:22,365:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:31:51,488:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:32:00,165:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:32:01,910:myserver.py:	POST /form.html HTTP/1.1	201 Created  ./htdocs/resources/aac3eb4c-803a-459c-b769-db08984917bf.json
+
+2020-11-09 07:45:19,434:myserver.py:	POST /form.html HTTP/1.1	201 Created  ./htdocs/resources/57e750ae-90f9-4970-9693-2c953c233f4b.json
+
+2020-11-09 07:45:32,231:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:46:00,266:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:46:35,647:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:57:38,774:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-09 07:57:42,704:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 07:58:44,861:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 08:03:12,252:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 08:10:17,066:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 08:22:01,634:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 08:23:46,679:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 08:25:04,869:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 08:54:58,542:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-09 08:56:57,155:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 09:21:00,275:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 09:21:15,682:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-09 09:21:17,441:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-09 09:34:04,195:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
