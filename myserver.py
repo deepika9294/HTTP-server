@@ -12,7 +12,7 @@ import logging
 import base64
 import random
 from config import *
-
+import string
 
 
 #link
@@ -277,8 +277,65 @@ def parse_urlencoded(postdata):
         parameters[str(divide[0])] = divide[1]
     json_data = json.dumps(parameters)
     return json_data
-#dont do that redirect post-shit
-def handle_post_request(client_socket, message):
+
+def parse_multipart(message):
+    entity_data = ""
+    for i in range(1,len(message)):
+        try:
+            entity_data += message[i]
+        except:
+            pass
+            #needs code for image file
+    
+    
+    data = []
+    split_char = entity_data.split(':')[0]
+    new_message = entity_data.split(split_char + ':' )
+    new_message.pop(0)
+    # new_message.pop()
+    # for i in range(0,len(new_message)):
+    #     print( "www {}".format(new_message[i]))
+
+    print(new_message)
+    
+    for i in range(0,len(new_message)):
+        new_message[i] = new_message[i].lstrip(' name=')
+    if_file_exist = 0
+    count = 0
+    for i in new_message:
+        if 'filename' in i:
+            if_file_exist = 1
+            filedata = i
+            break
+        data.append(i)
+        count += 1
+
+
+    print("DATA: {}".format(data))
+    #if file exist write data into file:
+    if(if_file_exist == 1):
+        filename = filedata.split("filename=")
+        if(len(filename) >= 2):
+            fname = filename[1].split("\r\n")[0].strip('"')
+            fdata = filename[1].split("\r\n")[1]
+            # if file already exit.. appending random string to it, might change to uuid, anyways need to append the file
+            if(os.path.isfile(RESOURCES + fname)):
+                letters = string.ascii_lowercase
+                result_str = ''.join(random.choice(letters) for i in range(5))
+                fname =  result_str+fname
+            fname = RESOURCES+ fname
+            print("dfd {}".format(fname))
+            fwrite = open(fname,"w")
+            fwrite.write(fdata)
+            fwrite.close()
+        else: 
+            pass
+        # appending file details which is created
+        data.append(new_message[count].split(' filename=')[0] + "filename=" + fname)
+    return data
+    
+
+def handle_post_request(client_socket, message, ):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     
@@ -289,7 +346,6 @@ def handle_post_request(client_socket, message):
             request_header[t[0]] = t[1]
 
     content_type = request_header["Content-Type"]
-    print(content_type)
     if(content_type == "application/x-www-form-urlencoded"): 
     
         json_response = parse_urlencoded(message[1])
@@ -323,40 +379,39 @@ def handle_post_request(client_socket, message):
         client_socket.send(response.encode())
         client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
 
-        # if(os.path.exists(send_file_response)):
-        #     if(os.path.isdir(send_file_response)):
-        #         client_socket.send(b"<html><head></head><body>Record Saved.</br>Requested url is a directory</body></html>")
-        #     else:
-        #         r_file = open(send_file_response, "rb")
-        #         client_socket.sendfile(r_file)
-        #         r_file.close()
+        
+    elif("multipart/form-data" in content_type):
+        if("Content-Length" in request_header.keys()):
+            content_length = request_header["Content-Length"]
+        else:
+            pass
+        data = parse_multipart(message)
+
+        # assuming even if 404 not found, still able to dump data
+        # writing the data into the file
+
+        post_url = RESOURCES + str(uuid.uuid4()) +".txt"
+        request_url = LINK + request_0[1][1:]
+        # dont check here for file exist
+        # if(os.path.exists(request_url)):
+        r_file = open(post_url, "w")
+        for i in range(0,len(data)):
+            r_file.write(data[i])
+        r_file.close()
+        status_code = "200 Ok"
         # else:
-        #     send_file_response = LINK + "error.html"
-        #     r_file = open(send_file_response, "rb")
-        #     client_socket.sendfile(r_file)
-        #     r_file.close()
-    # elif("multipart/form-data" in content_type):
-    #     print(message)
-    #     print("-------------")
-    #     print(message[1])
-    #     post_url = RESOURCES + str(uuid.uuid4()) +".txt"
-    #     request_url = LINK + request_0[1][1:]
-    #     if(os.path.exists(request_url)):
-    #         r_file = open(post_url, "w")
-    #         for i in range(1,len(message)):
-    #             r_file.write(message[i])
-    #         r_file.close()
-    #         status_code = "200 Ok"
-    #     else:
-    #         status_code = "404 Not Found"
+        #     status_code = "404 Not Found"
 
-    #     content_type = "multipart/form-data"
-    #     content_length = None
-    #     location = None
-    #     response = get_common_response(status_code,content_type,content_length,location)
+        content_type = "multipart/form-data"
+        content_length = content_length
+        location = post_url
+        response = get_common_response(status_code,content_type,content_length,location)
 
-    #     response += "\r\n"
-    #     client_socket.send(response.encode())
+        response += "\r\n"
+        client_socket.send(response.encode())
+        print("SOmething {}".format(response))
+        client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
+
 
     else: 
 
@@ -488,7 +543,9 @@ def threading(client_socket,client_address):
     #decide the size
     received_message = client_socket.recv(SIZE)
     w = open(LOGGING, "a")
-    # print("REC {}".format(received_message))  
+    print("------------------------------------------------------- {}".format(SIZE))
+    print("REC {}".format(received_message))  
+    print("---------------------------------------------------------------------")
     try:
         received_message = received_message.decode('utf-8')
         message = received_message.split("\r\n\r\n")
@@ -542,7 +599,7 @@ def create_server(port):
     except KeyboardInterrupt:
         print("Closing....")
     except Exception as exc :
-         print("ERROR")
+         print("ERROR1")
          print(exc) 
     
     server_socket.close()
