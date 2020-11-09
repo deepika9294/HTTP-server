@@ -267,6 +267,16 @@ def handle_put_request(client_socket, message):
     elif(content_type == "image/png" or content_type == "image/jpg"):
         handle_binary_put_request(client_socket, message)
 
+    else:
+        status_code ="415 Unsupported Media Type"
+        content_length = None
+        content_type = None
+        location= None
+        response = get_common_response(status_code,content_type,content_length,location)
+        response += "\r\n"
+        # logging.info('	{}	{}  {}\n'.format(split_message[0], status_code))
+        client_socket.send(response.encode())
+
     
 
 def parse_urlencoded(postdata):
