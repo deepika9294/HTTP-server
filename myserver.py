@@ -116,7 +116,7 @@ def handle_binary_put_request(client_socket, message):
     response += "\r\n"
     print("wow")
     print(response)
-    logging.info('	{}	{}  {}\n'.format(split_message[0], "\n" + response))
+    logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
     client_socket.send(response.encode())
 
 def handle_delete_request(client_socket, message):
@@ -174,7 +174,7 @@ def handle_delete_request(client_socket, message):
             location = delete_url
             response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)   
             response += "\r\n"
-            logging.info('	{}	{}  {}\n'.format(split_message[0], "\n" + response))
+            logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
             client_socket.send(response.encode())
         else:
             status_code = "401 Unauthorized"
@@ -183,7 +183,7 @@ def handle_delete_request(client_socket, message):
             location = None
             response = get_common_response(status_code,content_type,content_length,location)   
             response += "\r\n"
-            logging.info('	{}	{}  {}\n'.format(split_message[0], "\n"+response))
+            logging.info('	{}	{}  \n'.format(split_message[0], "\n"+response))
             client_socket.send(response.encode())
     else: 
         #check whether this or 403
@@ -193,7 +193,7 @@ def handle_delete_request(client_socket, message):
         location = None
         response = get_common_response(status_code,content_type,content_length,location)   
         response += "\r\n"
-        logging.info('	{}	{}  {}\n'.format(split_message[0], "\n" + response))
+        logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
         client_socket.send(response.encode())
 
 
@@ -235,7 +235,7 @@ def handle_put_request(client_socket, message):
         content_length = None
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
-        logging.info('	{}	{}  {}\n'.format(split_message[0], "\n"+response))
+        logging.info('	{}	{}  \n'.format(split_message[0], "\n"+response))
 
         client_socket.send(response.encode())
     elif(content_type == "text/plain"):
@@ -265,7 +265,7 @@ def handle_put_request(client_socket, message):
         content_length = None
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
-        logging.info('	{}	{}  {}\n'.format(split_message[0], "\n"+response))
+        logging.info('	{}	{}  \n'.format(split_message[0], "\n"+response))
 
         client_socket.send(response.encode())
     elif(content_type == "image/png" or content_type == "image/jpg"):
@@ -300,7 +300,7 @@ def parse_multipart(message):
             entity_data += message[i]
         except:
             # pass
-            message[i] = message[i].decode(errors = 'ignore')
+            message[i] = message[i].decode("ISO-8859-1")
             entity_data += message[i]
             isbinary = True
     
@@ -335,9 +335,11 @@ def parse_multipart(message):
             if(isbinary):
                 temp = filename[1].split("\r\n")
                 fdata = ""
+                print("TEAMP {} {}".format(temp,len(temp)))
                 for i in range(1,len(temp)):
                     fdata += temp[i]
-                    fdata += "\n"
+                    if(i == 1):
+                        fdata += "\r\n"
                 fdata = fdata[len(content_type):]
             else:
                 fdata = filename[1].split("\r\n")[1]
@@ -352,7 +354,7 @@ def parse_multipart(message):
             print("dfd {}".format(fname))
             if(isbinary):
                 fwrite = open(fname, "wb")
-                fwrite.write(fdata.encode())
+                fwrite.write(fdata.encode("ISO-8859-1"))
                 fwrite.close()
             else:
                 fwrite = open(fname,"w")
@@ -403,7 +405,7 @@ def handle_post_request(client_socket, message, ):
         location = file_write
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
-        logging.info('	{}	{}  {}\n'.format(split_message[0], "\n"+response))
+        logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
 
         client_socket.send(response.encode())
         client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
@@ -438,6 +440,7 @@ def handle_post_request(client_socket, message, ):
 
         response += "\r\n"
         client_socket.send(response.encode())
+        print(response)
         client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
 
 
