@@ -59,7 +59,7 @@ def get_common_response(status_code,content_type,content_length,location,set_coo
 def handle_binary_put_request(client_socket, message):
     #see the encoding thing properly
     split_message = message[0].split("\r\n")
-    print("HEADERS {}".format(split_message))
+    # print("HEADERS {}".format(split_message))
     request_0 = split_message[0].split(" ")
     # print("MESSSAAAAGEE {}".format(message[1]))
     file_name = LINK + request_0[1][1:]
@@ -73,26 +73,27 @@ def handle_binary_put_request(client_socket, message):
 
     length = int(request_header["Content-Length"])
     content_type = request_header["Content-Type"]
+    length = length - len(message[1])
     quotient = int(length // SIZE)
     remainder = length % SIZE
     #check the size issue
     for i in range(0,quotient):
         data = client_socket.recv(SIZE)
-        print(data)
+        # print(data)
         try:
             file_data += data
         except TypeError:
             data = data.encode()
             file_data = file_data + data
     if(remainder != 0):
-        data = client_socket.recv(SIZE)
+        data = client_socket.recv(remainder)
 
         try:
             file_data += data
         except TypeError:
             data = data.encode()
             file_data = file_data + data
-
+    print("###########################################################")
     url_path = LINK + request_0[1][1:]        
     if(os.path.isfile(url_path)):
         r_file = open(url_path, "wb")
@@ -114,6 +115,8 @@ def handle_binary_put_request(client_socket, message):
     location = file_name
     response = get_common_response(status_code,content_type,content_length,location) 
     response += "\r\n"
+    print("wow")
+    print(response)
     logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
     client_socket.send(response.encode())
 
@@ -292,8 +295,8 @@ def parse_urlencoded(postdata):
 
 def parse_multipart(message):
     entity_data = ""
-    if (isbinary):
-        entity_data = b""
+    # if (isbinary):
+    #     entity_data = b""
     for i in range(1,len(message)):
         try:
             entity_data += message[i]
@@ -302,9 +305,9 @@ def parse_multipart(message):
             print("why this got printeddddd")
             # message[i] = message[i].encode('ISO-8859-1')
             message[i] = message[i].decode(errors = 'ignore')
-            
+            # print("WOW: {}".format(message[i]))
             entity_data += message[i]
-
+            isbinary = True
             # entity_data = entity_data+ b"" + message[i]
 
             #needs code for image file
@@ -318,7 +321,7 @@ def parse_multipart(message):
     # for i in range(0,len(new_message)):
     #     print( "www {}".format(new_message[i]))
 
-    print(new_message)
+    # print(new_message)
     
     for i in range(0,len(new_message)):
         new_message[i] = new_message[i].lstrip(' name=')
@@ -328,6 +331,7 @@ def parse_multipart(message):
         if 'filename' in i:
             if_file_exist = 1
             filedata = i
+            print("Filename: {}".format(i))
             break
         data.append(i)
         count += 1
@@ -339,7 +343,15 @@ def parse_multipart(message):
         filename = filedata.split("filename=")
         if(len(filename) >= 2):
             fname = filename[1].split("\r\n")[0].strip('"')
-            fdata = filename[1].split("\r\n")[1]
+            # error handling required
+            if(isbinary):
+                temp = filename[1].split("\r\n")
+                fdata = ""
+                for i in range(1,len(temp)):
+                    fdata += temp[i]
+                # fdata = filename[1].split("\r\n")[2]
+            else:
+                fdata = filename[1].split("\r\n")[1]
             # if file already exit.. appending random string to it, might change to uuid, anyways need to append the file
             if(os.path.isfile(RESOURCES + fname)):
                 letters = string.ascii_lowercase
@@ -349,10 +361,13 @@ def parse_multipart(message):
             print("dfd {}".format(fname))
             if(isbinary):
                 fwrite = open(fname, "wb")
-                fwrite.write(fdata.encode("ISO-8859-1"))
+                print("FILEDATA: {}".format(fdata))
+                fwrite.write(b""+fdata.encode())
                 fwrite.close()
             else:
                 fwrite = open(fname,"w")
+                print("FILEDATAwwwww: {}".format(fdata))
+
                 fwrite.write(fdata)
                 fwrite.close()
         else: 

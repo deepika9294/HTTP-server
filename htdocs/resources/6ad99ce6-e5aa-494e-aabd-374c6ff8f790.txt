@@ -1,3 +1,0 @@
-form-data; name="firstname"noww
-form-data; name="lastname"asa
-form-data; name="fff";filename=./htdocs/resources/ldlagfavicon-16x16.png

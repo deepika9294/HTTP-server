@@ -1,3 +1,0 @@
-form-data; name="firstname"a
-form-data; name="lastname"asa
-form-data; name="fff";filename=./htdocs/resources/favicon-16x16.png

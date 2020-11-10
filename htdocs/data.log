@@ -416,3 +416,23 @@
 
 2020-11-10 14:16:23,372:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
 
+2020-11-10 14:49:30,405:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-10 14:49:32,058:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-10 15:08:58,982:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-10 15:15:44,364:myserver.py:	PUT / HTTP/1.1	201 Created  ./htdocs//932e3f94-8b4d-47a0-a46a-1dde8c46baf8.png
+
+2020-11-10 15:17:14,972:myserver.py:	PUT /public HTTP/1.1	201 Created  ./htdocs/public/97f9a00f-b590-47a1-927a-2798d00f0ab2.png
+
+2020-11-10 15:17:19,928:myserver.py:	PUT /public HTTP/1.1	201 Created  ./htdocs/public/26a869f4-902f-4900-8773-5510901825c6.txt
+
+2020-11-10 15:40:36,099:myserver.py:	PUT /htdocs HTTP/1.1	404 Not Found  ./htdocs/htdocs
+
+2020-11-10 15:40:53,491:myserver.py:	PUT /public HTTP/1.1	201 Created  ./htdocs/public/c8f033b9-e31c-4506-b910-0c80afc604d6.png
+
+2020-11-10 15:46:11,568:myserver.py:	PUT /public HTTP/1.1	201 Created  ./htdocs/public/6bc593f3-dc98-416b-ac39-5cf1b86f76ad.png
+
+2020-11-10 15:46:28,514:myserver.py:	PUT /public HTTP/1.1	201 Created  ./htdocs/public/3357b44c-1f50-417c-b977-0f800d0205f8.png
+

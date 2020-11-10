@@ -1,3 +1,0 @@
-form-data; name="firstname"check
-form-data; name="lastname"binary
-form-data; name="fff";filename=./htdocs/resources/rohit.py
