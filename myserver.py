@@ -116,7 +116,7 @@ def handle_binary_put_request(client_socket, message):
     response += "\r\n"
     print("wow")
     print(response)
-    logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+    logging.info('	{}	{}  {}\n'.format(split_message[0], "\n" + response))
     client_socket.send(response.encode())
 
 def handle_delete_request(client_socket, message):
@@ -146,7 +146,7 @@ def handle_delete_request(client_socket, message):
         response += "\r\n"
         file_data = r_file.read(document_length)
         r_file.close()
-        logging.info('	{}	{}\n'.format(split_message[0], status_code))
+        logging.info('	{}	{}\n'.format(split_message[0], "\n"+response))
 
         client_socket.send(response.encode())
         client_socket.send(file_data)
@@ -174,7 +174,7 @@ def handle_delete_request(client_socket, message):
             location = delete_url
             response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)   
             response += "\r\n"
-            logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+            logging.info('	{}	{}  {}\n'.format(split_message[0], "\n" + response))
             client_socket.send(response.encode())
         else:
             status_code = "401 Unauthorized"
@@ -183,7 +183,7 @@ def handle_delete_request(client_socket, message):
             location = None
             response = get_common_response(status_code,content_type,content_length,location)   
             response += "\r\n"
-            logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+            logging.info('	{}	{}  {}\n'.format(split_message[0], "\n"+response))
             client_socket.send(response.encode())
     else: 
         #check whether this or 403
@@ -193,7 +193,7 @@ def handle_delete_request(client_socket, message):
         location = None
         response = get_common_response(status_code,content_type,content_length,location)   
         response += "\r\n"
-        logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+        logging.info('	{}	{}  {}\n'.format(split_message[0], "\n" + response))
         client_socket.send(response.encode())
 
 
@@ -235,7 +235,7 @@ def handle_put_request(client_socket, message):
         content_length = None
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
-        logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+        logging.info('	{}	{}  {}\n'.format(split_message[0], "\n"+response))
 
         client_socket.send(response.encode())
     elif(content_type == "text/plain"):
@@ -265,7 +265,7 @@ def handle_put_request(client_socket, message):
         content_length = None
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
-        logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+        logging.info('	{}	{}  {}\n'.format(split_message[0], "\n"+response))
 
         client_socket.send(response.encode())
     elif(content_type == "image/png" or content_type == "image/jpg"):
@@ -403,7 +403,7 @@ def handle_post_request(client_socket, message, ):
         location = file_write
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
-        logging.info('	{}	{}  {}\n'.format(split_message[0], status_code, location))
+        logging.info('	{}	{}  {}\n'.format(split_message[0], "\n"+response))
 
         client_socket.send(response.encode())
         client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
@@ -451,7 +451,7 @@ def handle_post_request(client_socket, message, ):
         response = get_common_response(status_code,content_type,content_length,location)
 
         response += "\r\n"
-        logging.info('	{}	{}\n'.format(split_message[0], status_code))
+        logging.info('	{}	{}\n'.format(split_message[0], "\n"+ response))
 
         client_socket.send(response.encode())
     
@@ -497,7 +497,7 @@ def handle_get_head_request(client_socket, message):
         response += "\r\n"
         file_data = r_file.read(document_length)
         r_file.close()
-        logging.info('	{}	{}\n'.format(split_message[0], status_code))
+        logging.info('	{}	{}\n'.format(split_message[0], "\n"+ response))
         client_socket.send(response.encode())
         if("GET" == request_0[0]):
             client_socket.send(file_data)
@@ -559,7 +559,7 @@ def handle_get_head_request(client_socket, message):
         r_file.close()
     # print(response)
     client_socket.send(response.encode())
-    logging.info('	{}	{}\n'.format(split_message[0], status_code))
+    logging.info('	{}	{}\n'.format(split_message[0], "\n"+ response))
 
     if("GET" == request_0[0]):
         #resolve the broken pipe issue
