@@ -93,7 +93,6 @@ def handle_binary_put_request(client_socket, message):
         except TypeError:
             data = data.encode()
             file_data = file_data + data
-    print("###########################################################")
     url_path = LINK + request_0[1][1:]        
     if(os.path.isfile(url_path)):
         r_file = open(url_path, "wb")
@@ -295,33 +294,21 @@ def parse_urlencoded(postdata):
 
 def parse_multipart(message):
     entity_data = ""
-    # if (isbinary):
-    #     entity_data = b""
+    isbinary = False
     for i in range(1,len(message)):
         try:
             entity_data += message[i]
         except:
             # pass
-            print("why this got printeddddd")
-            # message[i] = message[i].encode('ISO-8859-1')
             message[i] = message[i].decode(errors = 'ignore')
-            # print("WOW: {}".format(message[i]))
             entity_data += message[i]
             isbinary = True
-            # entity_data = entity_data+ b"" + message[i]
-
-            #needs code for image file
     
     
     data = []
     split_char = entity_data.split(':')[0]
     new_message = entity_data.split(split_char + ':' )
     new_message.pop(0)
-    # new_message.pop()
-    # for i in range(0,len(new_message)):
-    #     print( "www {}".format(new_message[i]))
-
-    # print(new_message)
     
     for i in range(0,len(new_message)):
         new_message[i] = new_message[i].lstrip(' name=')
@@ -331,13 +318,14 @@ def parse_multipart(message):
         if 'filename' in i:
             if_file_exist = 1
             filedata = i
-            print("Filename: {}".format(i))
+            print (i)
+            if('png' in i):
+                content_type = "Content-Type: image/png"
             break
         data.append(i)
         count += 1
 
 
-    print("DATA: {}".format(data))
     #if file exist write data into file:
     if(if_file_exist == 1):
         filename = filedata.split("filename=")
@@ -349,9 +337,12 @@ def parse_multipart(message):
                 fdata = ""
                 for i in range(1,len(temp)):
                     fdata += temp[i]
-                # fdata = filename[1].split("\r\n")[2]
+                    fdata += "\n"
+                fdata = fdata[len(content_type):]
             else:
                 fdata = filename[1].split("\r\n")[1]
+
+            # remove_string = "Content-Type" + 
             # if file already exit.. appending random string to it, might change to uuid, anyways need to append the file
             if(os.path.isfile(RESOURCES + fname)):
                 letters = string.ascii_lowercase
@@ -361,18 +352,14 @@ def parse_multipart(message):
             print("dfd {}".format(fname))
             if(isbinary):
                 fwrite = open(fname, "wb")
-                print("FILEDATA: {}".format(fdata))
-                fwrite.write(b""+fdata.encode())
+                fwrite.write(fdata.encode())
                 fwrite.close()
             else:
                 fwrite = open(fname,"w")
-                print("FILEDATAwwwww: {}".format(fdata))
-
                 fwrite.write(fdata)
                 fwrite.close()
         else: 
             pass
-        # appending file details which is created
         data.append(new_message[count].split(' filename=')[0] + "filename=" + fname)
     return data
     
@@ -451,7 +438,6 @@ def handle_post_request(client_socket, message, ):
 
         response += "\r\n"
         client_socket.send(response.encode())
-        print("SOmething {}".format(response))
         client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
 
 

@@ -436,3 +436,13 @@
 
 2020-11-10 15:46:28,514:myserver.py:	PUT /public HTTP/1.1	201 Created  ./htdocs/public/3357b44c-1f50-417c-b977-0f800d0205f8.png
 
+2020-11-10 15:58:43,324:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-10 16:15:40,463:myserver.py:	GET /public/form1.html HTTP/1.1	200 OK
+
+2020-11-10 16:15:49,885:myserver.py:	POST /public/form.html HTTP/1.1	201 Created  ./htdocs/resources/208fa24d-4bc0-481f-b84d-fad7def5bd6f.json
+
+2020-11-10 16:19:16,667:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-10 16:20:50,045:myserver.py:	POST /public HTTP/1.1	201 Created  ./htdocs/resources/a8f709dc-0634-4eda-bc3f-2a7d596bba3c.json
+
