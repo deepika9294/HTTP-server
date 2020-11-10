@@ -404,3 +404,15 @@
 
 2020-11-09 09:53:45,290:myserver.py:	POST /public/form.html HTTP/1.1	201 Created  ./htdocs/resources/d48fb86d-9f62-40ba-8d82-b9bf4e889214.json
 
+2020-11-10 13:51:32,202:myserver.py:	GET / HTTP/1.1	200 OK
+
+2020-11-10 13:51:34,136:myserver.py:	GET /public/form1.html HTTP/1.1	200 OK
+
+2020-11-10 13:51:36,776:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-10 14:06:16,709:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-10 14:07:09,462:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+
+2020-11-10 14:16:23,372:myserver.py:	GET /public/form.html HTTP/1.1	200 OK
+

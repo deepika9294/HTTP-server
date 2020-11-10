@@ -22,6 +22,8 @@ import string
 # LOGGING = LINK + "data.log"
 # USERNAME = "deepika"
 # PASSWORD = "root"
+
+isbinary = False
 logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctime)s:%(filename)s:%(message)s')
 
 # check versions and return accordingly in the starting
@@ -290,11 +292,21 @@ def parse_urlencoded(postdata):
 
 def parse_multipart(message):
     entity_data = ""
+    if (isbinary):
+        entity_data = b""
     for i in range(1,len(message)):
         try:
             entity_data += message[i]
         except:
-            pass
+            # pass
+            print("why this got printeddddd")
+            # message[i] = message[i].encode('ISO-8859-1')
+            message[i] = message[i].decode(errors = 'ignore')
+            
+            entity_data += message[i]
+
+            # entity_data = entity_data+ b"" + message[i]
+
             #needs code for image file
     
     
@@ -335,9 +347,14 @@ def parse_multipart(message):
                 fname =  result_str+fname
             fname = RESOURCES+ fname
             print("dfd {}".format(fname))
-            fwrite = open(fname,"w")
-            fwrite.write(fdata)
-            fwrite.close()
+            if(isbinary):
+                fwrite = open(fname, "wb")
+                fwrite.write(fdata.encode("ISO-8859-1"))
+                fwrite.close()
+            else:
+                fwrite = open(fname,"w")
+                fwrite.write(fdata)
+                fwrite.close()
         else: 
             pass
         # appending file details which is created
@@ -567,8 +584,8 @@ def threading(client_socket,client_address):
         # print("MESA000 {}".format(message[0]))
         message[0] = message[0].decode(errors = 'ignore')
         # print("MESA000 {}".format(message[0]))
-
-        print("ERROR")
+        isbinary = True
+        print("ERROR Binary")
     split_message = message[0].split("\r\n")
     # print("MESA000 {}".format(message))
     # log.write(client_address)
