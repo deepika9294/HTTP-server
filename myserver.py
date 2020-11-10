@@ -321,6 +321,14 @@ def parse_multipart(message):
             print (i)
             if('png' in i):
                 content_type = "Content-Type: image/png"
+            elif('jpg' in i):
+                content_type = "Content-Type: image/jpg"
+            elif('jpeg' in i):
+                content_type = "Content-Type: image/jpeg"
+            elif('gif' in i):
+                content_type = "Content-Type: image/gif"
+            else:
+                content_type =""
             break
         data.append(i)
         count += 1
