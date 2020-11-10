@@ -627,7 +627,7 @@ def create_server(port):
 
     try:
         server_socket.bind(("localhost",int(port)))
-        server_socket.listen(5)
+        server_socket.listen(MAXREQUEST)
         while(True):
             client_socket, client_address = server_socket.accept()
             # print("clientSocket {} and client address {}".format(client_socket,client_address))

@@ -31,7 +31,10 @@ Username and Password for authorisation to perform delete request method
 USERNAME = 'deepika'
 PASSWORD = 'root'
 
-
+'''
+simultaneously can handle maximum of 10 request
+'''
+MAXREQUEST = 10
 
 
 

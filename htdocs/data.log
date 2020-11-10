@@ -392,3 +392,13 @@ Content-Length: 426
 
 
 
+2020-11-11 00:09:17,743:myserver.py:	PUT /public/form.html HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 00:09:17 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/plain; charset-utf-8
+Content-Location: ./htdocs/public/form.html
+
+  
+
