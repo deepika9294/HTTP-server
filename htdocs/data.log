@@ -26,3 +26,167 @@ Content-Location: ./htdocs/resources/0bd9f99d-47e8-4b46-b1d2-b171a271881f.json
 
   
 
+2020-11-11 17:50:07,039:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17381; Max-Age=60
+Date: Wednesday, 11 Nov 2020 17:50:07 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 17:50:08,519:myserver.py:	GET /favicon.ico HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34392; Max-Age=60
+Date: Wednesday, 11 Nov 2020 17:50:08 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 1150
+
+
+
+2020-11-11 17:50:12,414:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=17381; cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 17:50:12,423:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=17381; cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 17:50:12,430:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=17381; cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 17:50:12,445:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=17381; cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 17:50:12,452:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=17381; cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 17:50:12,472:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 17:50:12,478:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 17:50:12,767:myserver.py:	GET /images/image.gif HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 1258085
+
+
+
+2020-11-11 17:50:12,784:myserver.py:	GET /images/image.bmp HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 1048714
+
+
+
+2020-11-11 17:50:12,869:myserver.py:	GET /images/image.png HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: image/png; charset-utf-8
+Content-Length: 41236
+
+
+
+2020-11-11 17:50:13,279:myserver.py:	GET /images/image.jpg HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: image/jpg; charset-utf-8
+Content-Length: 81447
+
+
+
+2020-11-11 17:50:14,196:myserver.py:	GET /videos/video.mp4 HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: videomp4; charset-utf-8
+Content-Length: 144838
+
+
+
+2020-11-11 17:50:15,567:myserver.py:	GET /sounds/sound.mp3 HTTP/1.1	
+HTTP/1.1 200 OK
+Cookie: cookieid=34392
+Date: Wednesday, 11 Nov 2020 17:50:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: audio/mpeg; charset-utf-8
+Content-Length: 250908
+
+
+
