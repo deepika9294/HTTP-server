@@ -6,7 +6,7 @@ import sys
 import os
 import datetime
 import json
-from urllib.parse import *	 # for parsing URL/URI
+from urllib.parse import *
 import uuid
 import logging
 import base64

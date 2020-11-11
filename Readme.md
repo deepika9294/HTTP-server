@@ -12,8 +12,9 @@ python3 test_browser.py <port_no>
     Also before running this file, make sure server is started.
 
 Features Implemented:
-GET
-POST
-HEAD
-PUT
-DELETE
+GET,
+POST,
+HEAD,
+PUT,
+DELETE,
+Cookies
