@@ -19,14 +19,22 @@ def head(url):
     x = requests.head(url)
     print("HEAD: {}".format(x))
 
+
+
 def delete(url):
     x = requests.delete(url, auth = ('deepika', 'root'))
     print("DELETE: {}".format(x))
     
-
 def delete_unauth(url):
     x = requests.delete(url)
     print("DELETE UNAUTHORISED: {}".format(x))
+
+
+def post(url, obj):
+    time.sleep(1)
+    x = requests.post(url, data=obj)
+    resource = x.headers["Content-Location"]
+    print("POST {} Content-Location: {}".format(x,resource))
 
 def post_multipart(url,file):
     time.sleep(1)
@@ -48,11 +56,7 @@ def put_file(url,filename,path,content_type):
     print("PUT FILE : {} Content-Location: {}".format(x,resource))
 
 
-def post(url, obj):
-    time.sleep(1)
-    x = requests.post(url, data=obj)
-    resource = x.headers["Content-Location"]
-    print("POST {} Content-Location: {}".format(x,resource))
+
 
 if __name__ == "__main__":
     root = LINK
