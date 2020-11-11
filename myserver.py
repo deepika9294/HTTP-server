@@ -29,7 +29,7 @@ logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctim
 # check versions and return accordingly in the starting
 
 def check_version(version):
-    print(version)
+    # print(version)
     if(version == "HTTP/1.1" or version == "HTTP/1.0"):
         return -1
     else:
@@ -59,9 +59,7 @@ def get_common_response(status_code,content_type,content_length,location,set_coo
 def handle_binary_put_request(client_socket, message):
     #see the encoding thing properly
     split_message = message[0].split("\r\n")
-    # print("HEADERS {}".format(split_message))
     request_0 = split_message[0].split(" ")
-    # print("MESSSAAAAGEE {}".format(message[1]))
     file_name = LINK + request_0[1][1:]
     file_data = b"" + message[1]
     #get length
@@ -79,7 +77,6 @@ def handle_binary_put_request(client_socket, message):
     #check the size issue
     for i in range(0,quotient):
         data = client_socket.recv(SIZE)
-        # print(data)
         try:
             file_data += data
         except TypeError:
@@ -114,8 +111,7 @@ def handle_binary_put_request(client_socket, message):
     location = file_name
     response = get_common_response(status_code,content_type,content_length,location) 
     response += "\r\n"
-    print("wow")
-    print(response)
+    # print(response)
     logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
     client_socket.send(response.encode())
 
@@ -149,19 +145,16 @@ def handle_delete_request(client_socket, message):
         logging.info('	{}	{}\n'.format(split_message[0], "\n"+response))
 
         client_socket.send(response.encode())
+
         client_socket.send(file_data)
         return
 
-
-    
-    # print(request_header)
     
     if("Authorization" in request_header.keys()):
         auth = request_header['Authorization']
         auth = auth.split(' ')
         auth = base64.decodebytes(auth[1].encode()).decode()
         auth = auth.split(':')
-        # print("MASSS {}".format(auth))
         if(USERNAME == auth[0] and PASSWORD == auth[1]):
             delete_url = LINK  + request_0[1][1:]
             if(os.path.isfile(delete_url)):
@@ -260,7 +253,6 @@ def handle_put_request(client_socket, message):
         else: 
             status_code = "404 Not Found"
             location =None
-            # print(url_path)
 
         content_length = None
         response = get_common_response(status_code,content_type,content_length,location)
@@ -279,6 +271,8 @@ def handle_put_request(client_socket, message):
         response = get_common_response(status_code,content_type,content_length,location)
         response += "\r\n"
         # logging.info('	{}	{}  {}\n'.format(split_message[0], status_code))
+        logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
+
         client_socket.send(response.encode())
 
     
@@ -343,7 +337,7 @@ def parse_multipart(message):
             if(isbinary):
                 temp = filename[1].split("\r\n")
                 fdata = ""
-                print("TEAMP {} {}".format(temp,len(temp)))
+                # print("TEAMP {} {}".format(temp,len(temp)))
                 for i in range(1,len(temp)):
                     fdata += temp[i]
                     if(i == 1):
@@ -359,7 +353,6 @@ def parse_multipart(message):
                 result_str = ''.join(random.choice(letters) for i in range(5))
                 fname =  result_str+fname
             fname = RESOURCES+ fname
-            print("dfd {}".format(fname))
             if(isbinary):
                 fwrite = open(fname, "wb")
                 fwrite.write(fdata.encode("ISO-8859-1"))
@@ -403,11 +396,6 @@ def handle_post_request(client_socket, message, ):
         r_file = open(file_write, 'w')
         r_file.write(str(json_response))
         r_file.close()
-        # print(send_file_response)
-
-        # if(not(os.path.exists(send_file_response))):
-        #     status_code = "404 Not Found"
-        #     content_type = "text/html"
         
         content_length = None
         location = file_write
@@ -447,16 +435,18 @@ def handle_post_request(client_socket, message, ):
         response = get_common_response(status_code,content_type,content_length,location)
 
         response += "\r\n"
+        logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
+
         client_socket.send(response.encode())
-        print(response)
+        # print(response)
         client_socket.send(b"<html><head></head><body>Record Saved.</body></html>")
 
 
     else: 
 
         status_code ="415 Unsupported Media Type"
-        print(message[1])
-        print(content_type)
+        # print(message[1])
+        # print(content_type)
         content_length = None
         location = None
         response = get_common_response(status_code,content_type,content_length,location)
@@ -478,7 +468,7 @@ def handle_get_head_request(client_socket, message):
         t = i.split(": ")
         if(len(t) == 2):
             request_header[t[0]] = t[1]
-    print(request_header)
+    # print(request_header)
     #default_values    ------check if need to change
     if("Cookie" in request_header):
         cookie = request_header["Cookie"]
@@ -545,7 +535,7 @@ def handle_get_head_request(client_socket, message):
         content_length = str(document_length)
         response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
         response += "\r\n"
-        print(response)
+        # print(response)
         if("image" in content_type or "video" in content_type or "audio" in content_type):
             file_data = b""
             b = r_file.read(1)
@@ -582,9 +572,9 @@ def threading(client_socket,client_address):
     #decide the size
     received_message = client_socket.recv(SIZE)
     w = open(LOGGING, "a")
-    print("------------------------------------------------------- {}".format(SIZE))
-    print("REC {}".format(received_message))  
-    print("---------------------------------------------------------------------")
+    # print("------------------------------------------------------- {}".format(SIZE))
+    # print("REC {}".format(received_message))  
+    # print("---------------------------------------------------------------------")
     try:
         received_message = received_message.decode('utf-8')
         message = received_message.split("\r\n\r\n")
@@ -597,7 +587,7 @@ def threading(client_socket,client_address):
         message[0] = message[0].decode(errors = 'ignore')
         # print("MESA000 {}".format(message[0]))
         isbinary = True
-        print("ERROR Binary")
+        # print("ERROR Binary")
     split_message = message[0].split("\r\n")
     # print("MESA000 {}".format(message))
     # log.write(client_address)
@@ -616,7 +606,7 @@ def threading(client_socket,client_address):
     elif("DELETE" in split_message[0]):
         handle_delete_request(client_socket, message)
     else:
-        print("something else")
+        print("This Request is not handled")
     client_socket.shutdown(SHUT_WR)
     # client_socket.close()
 
@@ -627,6 +617,8 @@ def create_server(port):
 
     try:
         server_socket.bind(("localhost",int(port)))
+        print("Server started on port {}".format(port))
+
         server_socket.listen(MAXREQUEST)
         while(True):
             client_socket, client_address = server_socket.accept()
@@ -638,7 +630,7 @@ def create_server(port):
     except KeyboardInterrupt:
         print("Closing....")
     except Exception as exc :
-         print("ERROR1")
+         print("ERROR Exception")
          print(exc) 
     
     server_socket.close()
@@ -646,7 +638,7 @@ def create_server(port):
 
 
 if __name__ == "__main__":
-    print("Server started")
+    # print("Server started")
     if(len(sys.argv) < 2): 
         port = 9000
     else:
