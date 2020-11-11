@@ -34,7 +34,7 @@ PASSWORD = 'root'
 '''
 simultaneously can handle maximum of 10 request
 '''
-MAXREQUEST = 3
+MAXREQUEST = 30
 
 
 

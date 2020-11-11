@@ -319,7 +319,7 @@ def parse_multipart(message):
         if 'filename' in i:
             if_file_exist = 1
             filedata = i
-            print (i)
+            # print (i)
             if('png' in i):
                 content_type = "Content-Type: image/png"
             elif('jpg' in i):
@@ -377,7 +377,7 @@ def parse_multipart(message):
 def handle_post_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
-    print("WOW {}".format(message))
+    # print("WOW {}".format(message))
     request_header = {}
     for i in split_message:
         t = i.split(": ")

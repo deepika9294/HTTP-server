@@ -3182,3 +3182,6716 @@ Content-Location: ./htdocs/resources/61e0dfee-f8d8-422b-85d9-dd534d962fa0.json
 
   
 
+2020-11-11 21:41:14,898:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24023; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 21:41:14,898:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 21:41:14,899:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25839; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 21:41:14,904:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26394; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 21:41:14,907:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=41289; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 21:41:14,907:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=15049; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 21:41:14,910:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33710; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 21:41:14,920:myserver.py:	DELETE /resources/61e0dfee-f8d8-422b-85d9-dd534d962fa0.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 21:41:14,920:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32756; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 21:41:14,920:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=15857; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 21:41:14,924:myserver.py:	DELETE /resources/61e0dfee-f8d8-422b-85d9-dd534d962fa0.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11147; Max-Age=60
+Date: Wednesday, 11 Nov 2020 21:41:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/61e0dfee-f8d8-422b-85d9-dd534d962fa0.json
+
+  
+
+2020-11-11 21:41:15,895:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 21:41:15 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/44267083-5e2c-428d-93cb-816cc371018f.json
+
+  
+
+2020-11-11 22:40:49,417:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49185; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:40:49,418:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37092; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:40:49,422:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:40:49,423:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29189; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:40:49,430:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22166; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:40:49,431:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=12083; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:40:49,433:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13551; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:40:49,440:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18675; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:40:49,445:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=37622; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:40:49,448:myserver.py:	DELETE /resources/44267083-5e2c-428d-93cb-816cc371018f.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:40:49,448:myserver.py:	DELETE /resources/44267083-5e2c-428d-93cb-816cc371018f.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18545; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:40:49 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/44267083-5e2c-428d-93cb-816cc371018f.json
+
+  
+
+2020-11-11 22:40:50,413:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:40:50 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/50d863d2-f034-4043-b262-617ff84d869c.json
+
+  
+
+2020-11-11 22:41:36,955:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13415; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:41:36,958:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36033; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:41:36,959:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14776; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:41:36,966:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26876; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:41:36,973:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27679; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:41:36,976:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45055; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:41:36,978:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:41:36,983:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47700; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:41:36,986:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26218; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:41:36,990:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19918; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:41:36,994:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29389; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:36 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:41:37,002:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17483; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:41:37,005:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40315; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:41:37,022:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13544; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:41:37,022:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27404; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:41:37,026:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:41:37,030:myserver.py:	DELETE /resources/50d863d2-f034-4043-b262-617ff84d869c.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:41:37,031:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=12723; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:41:37,037:myserver.py:	DELETE /resources/50d863d2-f034-4043-b262-617ff84d869c.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40908; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/50d863d2-f034-4043-b262-617ff84d869c.json
+
+  
+
+2020-11-11 22:41:37,957:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:41:37 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/d59eac37-2580-4293-b705-852b44009d5c.json
+
+  
+
+2020-11-11 22:47:04,970:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45852; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:47:04,970:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31155; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:47:04,972:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27945; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:47:04,972:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45794; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:47:04,973:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11195; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:47:04,976:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:47:04,985:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25602; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:47:04,990:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47278; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:47:04,991:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=42420; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:47:04,991:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20437; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:47:04,994:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17781; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:47:05,000:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24029; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:47:05,003:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43749; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:47:05,004:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:47:05,011:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32124; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:47:05,013:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40780; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:47:05,016:myserver.py:	DELETE /resources/d59eac37-2580-4293-b705-852b44009d5c.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:47:05,020:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=16228; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:47:05,023:myserver.py:	DELETE /resources/d59eac37-2580-4293-b705-852b44009d5c.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24703; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/d59eac37-2580-4293-b705-852b44009d5c.json
+
+  
+
+2020-11-11 22:47:05,967:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:47:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/4cd2a98e-b706-4761-9770-d5324bfaa639.json
+
+  
+
+2020-11-11 22:48:21,685:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22060; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:48:21,687:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20984; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:48:21,689:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34683; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:48:21,691:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17868; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:48:21,703:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32329; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:48:21,716:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16679; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:48:21,727:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:48:21,728:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35090; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:48:21,730:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11259; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:48:21,737:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24372; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:48:21,737:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24892; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:48:21,753:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=30597; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:48:21,763:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10613; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:48:21,770:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27037; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:48:21,770:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:48:21,782:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29849; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:48:21,789:myserver.py:	DELETE /resources/4cd2a98e-b706-4761-9770-d5324bfaa639.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:48:21,795:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/587709e8-4bfd-4210-815d-102549f2ebf1.json
+
+  
+
+2020-11-11 22:48:21,804:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=45854; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:48:21,810:myserver.py:	DELETE /resources/4cd2a98e-b706-4761-9770-d5324bfaa639.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37309; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:48:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/4cd2a98e-b706-4761-9770-d5324bfaa639.json
+
+  
+
+2020-11-11 22:48:22,667:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:48:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/616246c5-f5a5-4744-87d0-0f9e03275692.json
+
+  
+
+2020-11-11 22:50:18,683:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19996; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:50:18,683:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13377; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:50:18,685:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40140; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:50:18,687:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10470; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:50:18,687:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22366; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:50:18,690:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:50:18,694:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23288; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:50:18,696:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35100; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:50:18,699:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40453; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:50:18,703:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16393; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:50:18,709:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18038; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:50:18,714:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24591; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:50:18,717:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:50:18,718:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=12813; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:50:18,723:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33156; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:50:18,731:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47992; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:50:18,731:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/c45dfc8e-b66b-4315-b505-a5a18f16b392.json
+
+  
+
+2020-11-11 22:50:18,741:myserver.py:	DELETE /resources/616246c5-f5a5-4744-87d0-0f9e03275692.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:50:18,747:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=11054; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:50:18,748:myserver.py:	DELETE /resources/616246c5-f5a5-4744-87d0-0f9e03275692.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43634; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/616246c5-f5a5-4744-87d0-0f9e03275692.json
+
+  
+
+2020-11-11 22:50:18,750:myserver.py:	DELETE /resources/587709e8-4bfd-4210-815d-102549f2ebf1.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18982; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:50:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/587709e8-4bfd-4210-815d-102549f2ebf1.json
+
+  
+
+2020-11-11 22:50:19,678:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:50:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json
+
+  
+
+2020-11-11 22:51:00,166:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19663; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:51:00,170:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=15537; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:51:00,172:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34042; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:51:00,177:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38517; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:51:00,179:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43460; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:51:00,185:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48056; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:51:00,191:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:51:00,191:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33483; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:51:00,192:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18523; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:51:00,200:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44039; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:51:00,205:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11730; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:51:00,205:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37174; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:51:00,217:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:51:00,219:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25463; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:51:00,219:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11202; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:51:00,223:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38003; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:51:00,228:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/dd54c69b-58c0-4849-9a50-57b1b8fa5d84.json
+
+  
+
+2020-11-11 22:51:00,232:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:51:00,233:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=40424; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:00 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:51:01,168:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:51:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/fbb2e5a2-29be-48af-a8d7-ad57e2f82f15.json
+
+  
+
+2020-11-11 22:51:20,066:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45194; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:51:20,067:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35286; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:51:20,069:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=46353; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:51:20,074:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38072; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:51:20,075:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14961; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:51:20,082:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33937; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:51:20,087:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44929; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:51:20,088:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14203; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:51:20,088:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=30770; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:51:20,089:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21744; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:51:20,089:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:51:20,098:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25846; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:51:20,098:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26447; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:51:20,103:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:51:20,111:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/d4df864e-d941-4c41-b956-9d13eb88af05.json
+
+  
+
+2020-11-11 22:51:20,111:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13862; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:51:20,115:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=12231; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:51:20,120:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=48296; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:51:20,124:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:51:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:51:21,064:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:51:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/378e913b-5144-4c99-b226-a3a7f544b07c.json
+
+  
+
+2020-11-11 22:51:41,540:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10179; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:51:41,545:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:51:41,548:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32756; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:51:41,548:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39376; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:51:41,550:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29003; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:51:41,552:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37238; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:51:41,553:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=42151; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:51:41,554:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45283; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:51:41,554:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26834; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:51:41,568:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24833; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:51:41,568:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45012; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:51:41,572:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40006; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:51:41,579:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19199; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:51:41,583:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:51:41,588:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19870; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:51:41,591:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34480; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:51:41,598:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=13989; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:51:41,599:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:51:41 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:51:42,535:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:51:42 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/9020f71a-a0fd-414e-9f2b-b89f1ec064fd.json
+
+  
+
+2020-11-11 22:51:43,592:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:51:43 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/eb16ed8b-7eec-4f5a-9b31-42a6158928cf.json
+
+  
+
+2020-11-11 22:54:38,635:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:54:38,635:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11795; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:54:38,638:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47274; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:54:38,638:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31233; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:54:38,641:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19665; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:54:38,645:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13336; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:54:38,652:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13206; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:54:38,654:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36447; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:54:38,655:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24751; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:54:38,657:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17277; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:54:38,663:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=46432; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:54:38,665:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=28054; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:54:38,671:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37490; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:54:38,676:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:54:38,682:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36116; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:54:38,683:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49184; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:54:38,690:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:54:38,693:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=32516; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:54:38 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:54:39,631:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:54:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/00cf5605-31f9-4410-9c28-551a8ed1a475.json
+
+  
+
+2020-11-11 22:54:40,687:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 22:54:40 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 22:54:40,687:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:54:40 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/a919db51-aa08-4fec-998a-e0548e26cc45.json
+
+  
+
+2020-11-11 22:55:12,916:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11216; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:55:12,917:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27120; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:55:12,921:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32023; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:55:12,925:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:55:12,926:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16221; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:55:12,926:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40952; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:55:12,926:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34316; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:55:12,941:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44609; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:55:12,943:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=28004; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 22:55:12,943:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=41673; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 22:55:12,951:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31761; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 22:55:12,955:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34184; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 22:55:12,959:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31218; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 22:55:12,964:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 22:55:12,965:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17900; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 22:55:12,969:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47132; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 22:55:12,975:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 22:55:12,975:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=49625; Max-Age=60
+Date: Wednesday, 11 Nov 2020 22:55:12 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 22:55:13,916:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:55:13 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/af4dd4f2-92b7-4e52-b86f-1413b2c591d8.json
+
+  
+
+2020-11-11 22:55:15,977:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 22:55:15 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 22:55:15,978:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 22:55:15 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/3e3345bb-b118-40d3-bbc4-bf920ed249d7.json
+
+  
+
+2020-11-11 23:08:19,689:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10016; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:08:19,692:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47287; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:08:19,692:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48892; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:08:19,699:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:08:19,700:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26020; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:08:19,701:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44631; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:08:19,715:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44035; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:08:19,716:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38906; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:08:19,717:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=41298; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:08:19,718:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38607; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:08:19,719:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29638; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:08:19,725:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29652; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:08:19,733:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39822; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:08:19,738:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33274; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:08:19,738:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:08:19,741:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33476; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:08:19,750:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=21421; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:08:19,750:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:08:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:08:20,692:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:08:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 919
+Content-Location: ./htdocs/resources/75814441-cd1a-4d7a-a34f-05bfebacf846.txt
+
+  
+
+2020-11-11 23:08:20,693:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:08:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/afc295c6-4113-47cb-b59a-4d2ad4f3cda2.json
+
+  
+
+2020-11-11 23:08:22,741:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:08:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:08:22,744:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:08:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/4e845a1d-f3d7-47aa-a581-6f69b9180153.json
+
+  
+
+2020-11-11 23:09:01,320:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16382; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:09:01,320:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37925; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:09:01,320:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=42359; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:09:01,320:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=30229; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:09:01,321:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27620; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:09:01,327:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24691; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:09:01,333:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20877; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:09:01,337:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:09:01,342:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26304; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:09:01,342:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48054; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:09:01,350:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37051; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:09:01,350:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21930; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:09:01,353:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48962; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:09:01,353:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:09:01,361:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36513; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:09:01,361:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18365; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:09:01,374:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:09:01,375:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=46033; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:09:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:09:02,321:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:09:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/3aafd3b5-407a-4379-a6b5-576202ccf9ea.json
+
+  
+
+2020-11-11 23:09:02,322:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:09:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/230e0d0a-3f38-4ec2-ab8a-789c9ea4ff44.txt
+
+  
+
+2020-11-11 23:09:04,374:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:09:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/3df35058-2496-4487-b918-18c58d3073f9.json
+
+  
+
+2020-11-11 23:09:04,375:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:09:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:10:16,691:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24229; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:10:16,693:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:10:16,699:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14776; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:10:16,699:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25107; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:10:16,702:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27457; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:10:16,708:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10355; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:10:16,708:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21112; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:10:16,708:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29048; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:10:16,715:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13811; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:10:16,719:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16823; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:10:16,725:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26823; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:10:16,730:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49512; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:10:16,738:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47010; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:10:16,742:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17446; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:10:16,743:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:10:16,748:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20070; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:10:16,751:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:10:16,754:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=20320; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:10:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:10:17,694:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:10:17 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/a97f0714-eceb-4082-ba18-c01236d574a3.json
+
+  
+
+2020-11-11 23:10:17,695:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:10:17 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/2a35ce3c-4810-4720-830e-aa5658784865.txt
+
+  
+
+2020-11-11 23:10:19,755:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:10:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:10:19,756:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:10:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/bee21a5d-1d6d-49a3-91c9-1000ea6291b7.json
+
+  
+
+2020-11-11 23:12:18,140:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=15651; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:12:18,143:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40477; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:12:18,144:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34915; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:12:18,146:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=28207; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:12:18,147:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32401; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:12:18,152:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:12:18,154:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=12517; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:12:18,160:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=15332; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:12:18,163:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29679; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:12:18,166:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10077; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:12:18,167:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44414; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:12:18,175:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40889; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:12:18,176:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14071; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:12:18,183:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38574; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:12:18,183:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:12:18,186:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=46534; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:12:18,191:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=22559; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:12:18,192:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:12:18 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:12:19,150:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:12:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/5989663b-8d09-4a02-8f18-6b16a5879151.json
+
+  
+
+2020-11-11 23:12:19,151:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:12:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/d8fb94d8-f4a7-4519-9bcb-9ac318886df5.txt
+
+  
+
+2020-11-11 23:12:19,151:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:12:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/e1053c55-a7ae-4de5-98b6-836626802e81.json
+
+  
+
+2020-11-11 23:12:21,198:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:12:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:12:21,198:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:12:21 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/4ddfbbc9-f23e-43de-b26b-9cc8b3d252c4.json
+
+  
+
+2020-11-11 23:14:39,842:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44171; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:14:39,845:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:14:39,849:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21312; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:14:39,851:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33984; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:14:39,852:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=46419; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:14:39,852:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24021; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:14:39,858:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38356; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:14:39,858:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18392; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:14:39,862:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14688; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:14:39,865:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36964; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:14:39,869:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26257; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:14:39,872:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19130; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:14:39,878:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25568; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:14:39,879:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16524; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:14:39,879:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:14:39,885:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40545; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:14:39,890:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=27698; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:14:39,891:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:14:39 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:14:40,845:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:14:40 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/90a9ef30-0171-4d2e-a510-669b611e37e1.json
+
+  
+
+2020-11-11 23:14:40,845:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:14:40 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/f7cfbd33-4a9f-489c-97fd-414bf4af7f65.txt
+
+  
+
+2020-11-11 23:14:40,851:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:14:40 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/f6e4469c-0c6b-4616-b884-d990c6bfd4e2.json
+
+  
+
+2020-11-11 23:14:42,897:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:14:42 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:14:42,898:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:14:42 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/22fa5284-2b1f-4a5b-ba07-582e334888bd.json
+
+  
+
+2020-11-11 23:14:56,820:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:14:56,820:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18555; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:14:56,823:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=46990; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:14:56,827:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18899; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:14:56,828:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47245; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:14:56,829:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49973; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:14:56,832:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23804; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:14:56,833:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21077; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:14:56,842:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39475; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:14:56,843:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36209; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:14:56,843:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=30826; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:14:56,851:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23367; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:14:56,854:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:14:56,859:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21019; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:14:56,860:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36338; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:14:56,862:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11652; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:14:56,870:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=49556; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:14:56,871:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:14:56,875:myserver.py:	DELETE /resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47764; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/6fa69946-9909-4deb-af3a-e85d5986fbba.json
+
+  
+
+2020-11-11 23:14:56,879:myserver.py:	DELETE /resources/230e0d0a-3f38-4ec2-ab8a-789c9ea4ff44.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20998; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/230e0d0a-3f38-4ec2-ab8a-789c9ea4ff44.txt
+
+  
+
+2020-11-11 23:14:56,889:myserver.py:	DELETE /resources/c45dfc8e-b66b-4315-b505-a5a18f16b392.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23725; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/c45dfc8e-b66b-4315-b505-a5a18f16b392.json
+
+  
+
+2020-11-11 23:14:56,891:myserver.py:	DELETE /resources/afc295c6-4113-47cb-b59a-4d2ad4f3cda2.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25644; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/afc295c6-4113-47cb-b59a-4d2ad4f3cda2.json
+
+  
+
+2020-11-11 23:14:56,893:myserver.py:	DELETE /resources/a919db51-aa08-4fec-998a-e0548e26cc45.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25927; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/a919db51-aa08-4fec-998a-e0548e26cc45.json
+
+  
+
+2020-11-11 23:14:56,903:myserver.py:	DELETE /resources/eb16ed8b-7eec-4f5a-9b31-42a6158928cf.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45663; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/eb16ed8b-7eec-4f5a-9b31-42a6158928cf.json
+
+  
+
+2020-11-11 23:14:56,906:myserver.py:	DELETE /resources/3aafd3b5-407a-4379-a6b5-576202ccf9ea.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19859; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/3aafd3b5-407a-4379-a6b5-576202ccf9ea.json
+
+  
+
+2020-11-11 23:14:56,910:myserver.py:	DELETE /resources/378e913b-5144-4c99-b226-a3a7f544b07c.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20824; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/378e913b-5144-4c99-b226-a3a7f544b07c.json
+
+  
+
+2020-11-11 23:14:56,913:myserver.py:	DELETE /resources/22fa5284-2b1f-4a5b-ba07-582e334888bd.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=46876; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/22fa5284-2b1f-4a5b-ba07-582e334888bd.json
+
+  
+
+2020-11-11 23:14:56,919:myserver.py:	DELETE /resources/a97f0714-eceb-4082-ba18-c01236d574a3.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19894; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/a97f0714-eceb-4082-ba18-c01236d574a3.json
+
+  
+
+2020-11-11 23:14:56,922:myserver.py:	DELETE /resources/3e3345bb-b118-40d3-bbc4-bf920ed249d7.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38565; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/3e3345bb-b118-40d3-bbc4-bf920ed249d7.json
+
+  
+
+2020-11-11 23:14:56,930:myserver.py:	DELETE /resources/af4dd4f2-92b7-4e52-b86f-1413b2c591d8.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25514; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/af4dd4f2-92b7-4e52-b86f-1413b2c591d8.json
+
+  
+
+2020-11-11 23:14:56,931:myserver.py:	DELETE /resources/f7cfbd33-4a9f-489c-97fd-414bf4af7f65.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21057; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/f7cfbd33-4a9f-489c-97fd-414bf4af7f65.txt
+
+  
+
+2020-11-11 23:14:56,933:myserver.py:	DELETE /resources/5989663b-8d09-4a02-8f18-6b16a5879151.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17253; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/5989663b-8d09-4a02-8f18-6b16a5879151.json
+
+  
+
+2020-11-11 23:14:56,934:myserver.py:	DELETE /resources/fbb2e5a2-29be-48af-a8d7-ad57e2f82f15.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36938; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/fbb2e5a2-29be-48af-a8d7-ad57e2f82f15.json
+
+  
+
+2020-11-11 23:14:56,943:myserver.py:	DELETE /resources/4e845a1d-f3d7-47aa-a581-6f69b9180153.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19877; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/4e845a1d-f3d7-47aa-a581-6f69b9180153.json
+
+  
+
+2020-11-11 23:14:56,950:myserver.py:	DELETE /resources/f6e4469c-0c6b-4616-b884-d990c6bfd4e2.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22843; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/f6e4469c-0c6b-4616-b884-d990c6bfd4e2.json
+
+  
+
+2020-11-11 23:14:56,953:myserver.py:	DELETE /resources/75814441-cd1a-4d7a-a34f-05bfebacf846.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21144; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/75814441-cd1a-4d7a-a34f-05bfebacf846.txt
+
+  
+
+2020-11-11 23:14:56,961:myserver.py:	DELETE /resources/favicon-16x16.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47549; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/favicon-16x16.png
+
+  
+
+2020-11-11 23:14:56,963:myserver.py:	DELETE /resources/dd54c69b-58c0-4849-9a50-57b1b8fa5d84.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=12467; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/dd54c69b-58c0-4849-9a50-57b1b8fa5d84.json
+
+  
+
+2020-11-11 23:14:56,964:myserver.py:	DELETE /resources/d4df864e-d941-4c41-b956-9d13eb88af05.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21603; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/d4df864e-d941-4c41-b956-9d13eb88af05.json
+
+  
+
+2020-11-11 23:14:56,968:myserver.py:	DELETE /resources/3df35058-2496-4487-b918-18c58d3073f9.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29040; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/3df35058-2496-4487-b918-18c58d3073f9.json
+
+  
+
+2020-11-11 23:14:56,972:myserver.py:	DELETE /resources/4ddfbbc9-f23e-43de-b26b-9cc8b3d252c4.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16965; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/4ddfbbc9-f23e-43de-b26b-9cc8b3d252c4.json
+
+  
+
+2020-11-11 23:14:56,983:myserver.py:	DELETE /resources/e1053c55-a7ae-4de5-98b6-836626802e81.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35268; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/e1053c55-a7ae-4de5-98b6-836626802e81.json
+
+  
+
+2020-11-11 23:14:56,986:myserver.py:	DELETE /resources/00cf5605-31f9-4410-9c28-551a8ed1a475.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10681; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/00cf5605-31f9-4410-9c28-551a8ed1a475.json
+
+  
+
+2020-11-11 23:14:56,996:myserver.py:	DELETE /resources/2a35ce3c-4810-4720-830e-aa5658784865.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35144; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/2a35ce3c-4810-4720-830e-aa5658784865.txt
+
+  
+
+2020-11-11 23:14:56,997:myserver.py:	DELETE /resources/90a9ef30-0171-4d2e-a510-669b611e37e1.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29524; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/90a9ef30-0171-4d2e-a510-669b611e37e1.json
+
+  
+
+2020-11-11 23:14:56,999:myserver.py:	DELETE /resources/bee21a5d-1d6d-49a3-91c9-1000ea6291b7.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33988; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/bee21a5d-1d6d-49a3-91c9-1000ea6291b7.json
+
+  
+
+2020-11-11 23:14:57,006:myserver.py:	DELETE /resources/9020f71a-a0fd-414e-9f2b-b89f1ec064fd.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40036; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:57 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/9020f71a-a0fd-414e-9f2b-b89f1ec064fd.json
+
+  
+
+2020-11-11 23:14:57,010:myserver.py:	DELETE /resources/d8fb94d8-f4a7-4519-9bcb-9ac318886df5.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49129; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:14:57 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/d8fb94d8-f4a7-4519-9bcb-9ac318886df5.txt
+
+  
+
+2020-11-11 23:14:57,830:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:14:57 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/90d164fd-f6d5-44f6-b3fe-b489d1a2e044.json
+
+  
+
+2020-11-11 23:14:57,830:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:14:57 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/1e2560ff-de0e-4df9-9056-c7d5f301f2d3.txt
+
+  
+
+2020-11-11 23:14:57,831:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:14:57 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/5b344b15-4952-4be0-ba8b-e31626be0334.json
+
+  
+
+2020-11-11 23:14:59,869:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:14:59 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/74aef3f6-c1a0-4467-82f0-da5a0213ec24.json
+
+  
+
+2020-11-11 23:14:59,870:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:14:59 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:20:14,889:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24179; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:20:14,893:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23498; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:20:14,896:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34225; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:20:14,896:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31742; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:20:14,902:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39512; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:20:14,906:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14336; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:20:14,911:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:20:14,911:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=28584; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:20:14,911:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40046; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:20:14,913:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31692; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:20:14,913:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45931; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:20:14,919:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25675; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:20:14,921:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17269; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:20:14,921:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22885; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:20:14,924:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:20:14,930:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35249; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:20:14,936:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=32731; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:20:14,936:myserver.py:	DELETE /resources/90d164fd-f6d5-44f6-b3fe-b489d1a2e044.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:20:14,942:myserver.py:	DELETE /resources/90d164fd-f6d5-44f6-b3fe-b489d1a2e044.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33996; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/90d164fd-f6d5-44f6-b3fe-b489d1a2e044.json
+
+  
+
+2020-11-11 23:20:14,945:myserver.py:	DELETE /resources/74aef3f6-c1a0-4467-82f0-da5a0213ec24.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34399; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/74aef3f6-c1a0-4467-82f0-da5a0213ec24.json
+
+  
+
+2020-11-11 23:20:14,951:myserver.py:	DELETE /resources/5b344b15-4952-4be0-ba8b-e31626be0334.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17366; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/5b344b15-4952-4be0-ba8b-e31626be0334.json
+
+  
+
+2020-11-11 23:20:14,952:myserver.py:	DELETE /resources/1e2560ff-de0e-4df9-9056-c7d5f301f2d3.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=15341; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/1e2560ff-de0e-4df9-9056-c7d5f301f2d3.txt
+
+  
+
+2020-11-11 23:20:14,954:myserver.py:	DELETE /resources/favicon-16x16.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32227; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:20:14 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/favicon-16x16.png
+
+  
+
+2020-11-11 23:20:15,898:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:20:15 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/ccbeae58-1f44-49f2-9c6f-c6aee7c6de7f.txt
+
+  
+
+2020-11-11 23:20:15,899:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:20:15 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/92679a9d-727e-46a5-aab3-146f9ab1c5a0.json
+
+  
+
+2020-11-11 23:20:15,899:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:20:15 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/4740d361-5b31-40f8-b524-13143e0d8195.json
+
+  
+
+2020-11-11 23:20:17,932:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:20:17 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:20:17,937:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:20:17 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/57e376df-591a-4152-aca4-cb2c962f3ec7.json
+
+  
+
+2020-11-11 23:21:02,854:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34804; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:21:02,856:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13850; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:21:02,860:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35875; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:21:02,862:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32031; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:21:02,865:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40220; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:21:02,870:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18737; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:21:02,872:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35460; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:21:02,872:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=30405; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:21:02,874:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26472; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:21:02,879:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:21:02,882:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48137; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:21:02,884:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36269; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:21:02,896:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:21:02,900:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=15780; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:21:02,907:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49298; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:21:02,908:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=32955; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:21:02,917:myserver.py:	DELETE /resources/92679a9d-727e-46a5-aab3-146f9ab1c5a0.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:21:02,929:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=34012; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:21:02,932:myserver.py:	DELETE /resources/92679a9d-727e-46a5-aab3-146f9ab1c5a0.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36995; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/92679a9d-727e-46a5-aab3-146f9ab1c5a0.json
+
+  
+
+2020-11-11 23:21:02,943:myserver.py:	DELETE /resources/57e376df-591a-4152-aca4-cb2c962f3ec7.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=35605; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/57e376df-591a-4152-aca4-cb2c962f3ec7.json
+
+  
+
+2020-11-11 23:21:02,943:myserver.py:	DELETE /resources/4740d361-5b31-40f8-b524-13143e0d8195.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=41186; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/4740d361-5b31-40f8-b524-13143e0d8195.json
+
+  
+
+2020-11-11 23:21:02,945:myserver.py:	DELETE /resources/ccbeae58-1f44-49f2-9c6f-c6aee7c6de7f.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34932; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/ccbeae58-1f44-49f2-9c6f-c6aee7c6de7f.txt
+
+  
+
+2020-11-11 23:21:03,863:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:21:03 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/ae1b8b51-491d-41de-a641-a9fb81c68c73.json
+
+  
+
+2020-11-11 23:21:03,863:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:21:03 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/e4ebc5de-0d99-41cf-95a8-13903f071408.json
+
+  
+
+2020-11-11 23:21:03,866:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:21:03 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/2c68c178-d4e6-43b3-9bc6-97083b8d4326.txt
+
+  
+
+2020-11-11 23:21:05,913:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:21:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:21:05,915:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:21:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/25739054-16ba-4da5-b036-eaea7138be3f.json
+
+  
+
+2020-11-11 23:21:51,652:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26684; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:21:51,655:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21113; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:21:51,655:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10585; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:21:51,656:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22009; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:21:51,657:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:21:51,661:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27945; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:21:51,666:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23509; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:21:51,674:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45728; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:21:51,676:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=28606; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:21:51,682:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=26103; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:21:51,685:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14918; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:21:51,690:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11777; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:21:51,691:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19116; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:21:51,698:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48321; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:21:51,701:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45399; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:21:51,704:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:21:51,710:myserver.py:	DELETE /resources/25739054-16ba-4da5-b036-eaea7138be3f.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:21:51,712:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=11781; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:21:51,713:myserver.py:	DELETE /resources/25739054-16ba-4da5-b036-eaea7138be3f.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36753; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/25739054-16ba-4da5-b036-eaea7138be3f.json
+
+  
+
+2020-11-11 23:21:51,720:myserver.py:	DELETE /resources/2c68c178-d4e6-43b3-9bc6-97083b8d4326.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22816; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/2c68c178-d4e6-43b3-9bc6-97083b8d4326.txt
+
+  
+
+2020-11-11 23:21:51,720:myserver.py:	DELETE /resources/ae1b8b51-491d-41de-a641-a9fb81c68c73.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=41398; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/ae1b8b51-491d-41de-a641-a9fb81c68c73.json
+
+  
+
+2020-11-11 23:21:51,727:myserver.py:	DELETE /resources/e4ebc5de-0d99-41cf-95a8-13903f071408.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40765; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/e4ebc5de-0d99-41cf-95a8-13903f071408.json
+
+  
+
+2020-11-11 23:21:51,729:myserver.py:	DELETE /resources/favicon-16x16.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13194; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:21:51 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/favicon-16x16.png
+
+  
+
+2020-11-11 23:21:52,650:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:21:52 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/e19f4556-aeab-4b99-adfe-edc4824feb0f.json
+
+  
+
+2020-11-11 23:21:52,657:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:21:52 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/43d23d8e-ac71-477a-928e-ad54b544add0.txt
+
+  
+
+2020-11-11 23:21:52,658:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:21:52 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/26c9f83e-1525-4af4-981d-1944f8c7e714.json
+
+  
+
+2020-11-11 23:21:54,715:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:21:54 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:21:54,715:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:21:54 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/5ea98ca1-491c-4590-a465-1ccb8bc7be3f.json
+
+  
+
+2020-11-11 23:21:55,713:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:21:55 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: image/png; charset-utf-8
+Content-Location: ./htdocs/resources/f50527de-74a8-40f9-9c34-234da4a3095a.png
+
+  
+
+2020-11-11 23:25:53,618:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29635; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:25:53,621:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:25:53,623:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34915; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:25:53,626:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13084; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:25:53,631:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31693; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:25:53,632:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21328; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:25:53,632:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20009; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:25:53,638:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11736; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:25:53,643:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49786; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:25:53,651:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40711; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:25:53,651:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47158; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:25:53,652:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13406; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:25:53,655:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14328; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:25:53,661:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:25:53,668:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=18926; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:25:53,669:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34510; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:25:53,677:myserver.py:	DELETE /resources/e19f4556-aeab-4b99-adfe-edc4824feb0f.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:25:53,680:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=13601; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:25:53,684:myserver.py:	DELETE /resources/43d23d8e-ac71-477a-928e-ad54b544add0.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14443; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/43d23d8e-ac71-477a-928e-ad54b544add0.txt
+
+  
+
+2020-11-11 23:25:53,686:myserver.py:	DELETE /resources/e19f4556-aeab-4b99-adfe-edc4824feb0f.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20204; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/e19f4556-aeab-4b99-adfe-edc4824feb0f.json
+
+  
+
+2020-11-11 23:25:53,689:myserver.py:	DELETE /resources/f50527de-74a8-40f9-9c34-234da4a3095a.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24835; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/f50527de-74a8-40f9-9c34-234da4a3095a.png
+
+  
+
+2020-11-11 23:25:53,693:myserver.py:	DELETE /resources/favicon-16x16.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23797; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/favicon-16x16.png
+
+  
+
+2020-11-11 23:25:53,696:myserver.py:	DELETE /resources/26c9f83e-1525-4af4-981d-1944f8c7e714.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=45360; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/26c9f83e-1525-4af4-981d-1944f8c7e714.json
+
+  
+
+2020-11-11 23:25:53,701:myserver.py:	DELETE /resources/5ea98ca1-491c-4590-a465-1ccb8bc7be3f.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37861; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:25:53 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/5ea98ca1-491c-4590-a465-1ccb8bc7be3f.json
+
+  
+
+2020-11-11 23:25:54,625:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:25:54 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/4e386b22-d139-4629-b127-578e655aa5e7.json
+
+  
+
+2020-11-11 23:25:54,626:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:25:54 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/f0bca79b-85b0-4231-921d-1bc50e860e90.txt
+
+  
+
+2020-11-11 23:25:54,626:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:25:54 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/6e6d6b49-fcf3-4a38-8487-fd16ee134daa.json
+
+  
+
+2020-11-11 23:25:56,680:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:25:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/4fa6c44e-57c7-4a2a-a5af-1b82b50082bb.json
+
+  
+
+2020-11-11 23:25:56,680:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:25:56 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:26:22,161:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48775; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:26:22,164:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43193; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:26:22,166:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37128; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:26:22,180:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17655; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:26:22,184:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39187; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:26:22,192:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:26:22,192:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=41666; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:26:22,194:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11005; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:26:22,204:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33266; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:26:22,207:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47358; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:26:22,216:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23176; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:26:22,224:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47906; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:26:22,237:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39388; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:26:22,239:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:26:22,246:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=46858; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:26:22,260:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24724; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:26:22,260:myserver.py:	DELETE /resources/f0bca79b-85b0-4231-921d-1bc50e860e90.txt HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:26:22,266:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=39018; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:26:22,270:myserver.py:	DELETE /resources/f0bca79b-85b0-4231-921d-1bc50e860e90.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40113; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/f0bca79b-85b0-4231-921d-1bc50e860e90.txt
+
+  
+
+2020-11-11 23:26:22,277:myserver.py:	DELETE /resources/4fa6c44e-57c7-4a2a-a5af-1b82b50082bb.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16243; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/4fa6c44e-57c7-4a2a-a5af-1b82b50082bb.json
+
+  
+
+2020-11-11 23:26:22,283:myserver.py:	DELETE /resources/6e6d6b49-fcf3-4a38-8487-fd16ee134daa.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10502; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/6e6d6b49-fcf3-4a38-8487-fd16ee134daa.json
+
+  
+
+2020-11-11 23:26:22,294:myserver.py:	DELETE /resources/4e386b22-d139-4629-b127-578e655aa5e7.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33566; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/4e386b22-d139-4629-b127-578e655aa5e7.json
+
+  
+
+2020-11-11 23:26:22,297:myserver.py:	DELETE /resources/favicon-16x16.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=41729; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:26:22 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/favicon-16x16.png
+
+  
+
+2020-11-11 23:26:23,170:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:26:23 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/5ee0bb54-f38b-4e8e-ac62-64d20fb3eedd.json
+
+  
+
+2020-11-11 23:26:23,170:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:26:23 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/842f246b-5f90-4f6d-8a22-1dbea17783cf.json
+
+  
+
+2020-11-11 23:26:23,171:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:26:23 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/8483b09f-3554-40ca-8719-86f9b34ea262.txt
+
+  
+
+2020-11-11 23:26:25,265:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:26:25 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:26:25,265:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:26:25 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/6698215e-c3b1-4d05-b279-f309c7ca1439.json
+
+  
+
+2020-11-11 23:26:26,271:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:26:26 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/plain; charset-utf-8
+Content-Location: ./htdocs/resources/4924d0cc-77cc-4228-93e2-2afed0528fcc.txt
+
+  
+
+2020-11-11 23:26:26,272:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:26:26 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: image/png; charset-utf-8
+Content-Location: ./htdocs/resources/c8ca5a55-c34b-41a6-881b-622e03c8d53d.png
+
+  
+
+2020-11-11 23:27:01,372:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14237; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:27:01,374:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43706; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:27:01,378:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:27:01,387:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48069; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:27:01,388:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22428; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:27:01,389:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=15496; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:27:01,398:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29745; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:27:01,398:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23026; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:27:01,398:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16319; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:27:01,408:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13237; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:27:01,413:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44728; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:27:01,415:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25594; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:27:01,415:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:27:01,416:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=24329; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:27:01,422:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22440; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:27:01,424:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31432; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:27:01,434:myserver.py:	DELETE /resources/6698215e-c3b1-4d05-b279-f309c7ca1439.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:27:01,435:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=19439; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:27:01,440:myserver.py:	DELETE /resources/6698215e-c3b1-4d05-b279-f309c7ca1439.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=23749; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/6698215e-c3b1-4d05-b279-f309c7ca1439.json
+
+  
+
+2020-11-11 23:27:01,441:myserver.py:	DELETE /resources/5ee0bb54-f38b-4e8e-ac62-64d20fb3eedd.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=41980; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/5ee0bb54-f38b-4e8e-ac62-64d20fb3eedd.json
+
+  
+
+2020-11-11 23:27:01,448:myserver.py:	DELETE /resources/c8ca5a55-c34b-41a6-881b-622e03c8d53d.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=19799; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/c8ca5a55-c34b-41a6-881b-622e03c8d53d.png
+
+  
+
+2020-11-11 23:27:01,449:myserver.py:	DELETE /resources/4924d0cc-77cc-4228-93e2-2afed0528fcc.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47993; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/4924d0cc-77cc-4228-93e2-2afed0528fcc.txt
+
+  
+
+2020-11-11 23:27:01,456:myserver.py:	DELETE /resources/favicon-16x16.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=42118; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/favicon-16x16.png
+
+  
+
+2020-11-11 23:27:01,456:myserver.py:	DELETE /resources/842f246b-5f90-4f6d-8a22-1dbea17783cf.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36763; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/842f246b-5f90-4f6d-8a22-1dbea17783cf.json
+
+  
+
+2020-11-11 23:27:01,463:myserver.py:	DELETE /resources/8483b09f-3554-40ca-8719-86f9b34ea262.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49650; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:01 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/8483b09f-3554-40ca-8719-86f9b34ea262.txt
+
+  
+
+2020-11-11 23:27:02,380:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:27:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/ed4e6200-bf86-4003-b550-b9dfbb84b732.json
+
+  
+
+2020-11-11 23:27:02,381:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:27:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/c18e7823-cae3-491b-8f4a-f48adff09291.json
+
+  
+
+2020-11-11 23:27:02,382:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:27:02 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/147a0cea-3d04-41b3-93ed-b6c8c8e15108.txt
+
+  
+
+2020-11-11 23:27:04,433:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:27:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:27:04,433:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:27:04 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/486f48bd-d3af-48bb-87aa-811c155ad0c2.json
+
+  
+
+2020-11-11 23:27:05,445:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:27:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/plain; charset-utf-8
+Content-Location: ./htdocs/resources/133cb103-a9ae-4073-a56d-284f1004e18c.txt
+
+  
+
+2020-11-11 23:27:44,186:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39594; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:27:44,189:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=28545; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:27:44,189:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37485; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:27:44,194:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=28093; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:27:44,194:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=31724; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:27:44,194:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17543; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:27:44,197:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:27:44,200:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37007; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:27:44,203:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=36840; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:27:44,204:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=42535; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:27:44,207:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13529; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:27:44,214:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37274; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:27:44,214:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40516; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:27:44,217:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:27:44,225:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=11925; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:27:44,225:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=42103; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:27:44,232:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=27235; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:27:44,236:myserver.py:	DELETE /resources/486f48bd-d3af-48bb-87aa-811c155ad0c2.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:27:44,241:myserver.py:	DELETE /resources/486f48bd-d3af-48bb-87aa-811c155ad0c2.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20839; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/486f48bd-d3af-48bb-87aa-811c155ad0c2.json
+
+  
+
+2020-11-11 23:27:44,246:myserver.py:	DELETE /resources/133cb103-a9ae-4073-a56d-284f1004e18c.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10216; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/133cb103-a9ae-4073-a56d-284f1004e18c.txt
+
+  
+
+2020-11-11 23:27:44,248:myserver.py:	DELETE /resources/147a0cea-3d04-41b3-93ed-b6c8c8e15108.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22168; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/147a0cea-3d04-41b3-93ed-b6c8c8e15108.txt
+
+  
+
+2020-11-11 23:27:44,250:myserver.py:	DELETE /resources/c18e7823-cae3-491b-8f4a-f48adff09291.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33015; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/c18e7823-cae3-491b-8f4a-f48adff09291.json
+
+  
+
+2020-11-11 23:27:44,256:myserver.py:	DELETE /resources/favicon-16x16.png HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=17854; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/favicon-16x16.png
+
+  
+
+2020-11-11 23:27:44,258:myserver.py:	DELETE /resources/ed4e6200-bf86-4003-b550-b9dfbb84b732.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=25918; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:27:44 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/ed4e6200-bf86-4003-b550-b9dfbb84b732.json
+
+  
+
+2020-11-11 23:27:45,193:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:27:45 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/ae4e869a-7c69-457a-b05c-9458cec34d03.json
+
+  
+
+2020-11-11 23:27:45,193:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:27:45 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/0ca5caaa-a51b-40c3-ab1f-ac3938f1ab11.txt
+
+  
+
+2020-11-11 23:27:45,195:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:27:45 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/543314f4-f5ff-469c-83db-4aa449f816d4.json
+
+  
+
+2020-11-11 23:27:47,238:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:27:47 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/279dadb7-7abf-40e5-a2ca-3742642c9b61.json
+
+  
+
+2020-11-11 23:27:47,239:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:27:47 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:27:48,245:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:27:48 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/plain; charset-utf-8
+Content-Location: ./htdocs/resources/65847ccd-3b2c-47ce-87c7-59e2320b0a58.txt
+
+  
+
+2020-11-11 23:30:16,826:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37627; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:30:16,828:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39164; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:30:16,833:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44600; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:30:16,834:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29935; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:30:16,837:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=10136; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:30:16,839:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:30:16,840:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=37397; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:30:16,841:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=34533; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:30:16,848:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=48066; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:30:16,853:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39006; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:30:16,857:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40218; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:30:16,857:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=29554; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:30:16,859:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16647; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:30:16,865:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:30:16,867:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43330; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:30:16,870:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=30855; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:30:16,879:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=18393; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:30:16,880:myserver.py:	DELETE /resources/65847ccd-3b2c-47ce-87c7-59e2320b0a58.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=47832; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/65847ccd-3b2c-47ce-87c7-59e2320b0a58.txt
+
+  
+
+2020-11-11 23:30:16,882:myserver.py:	DELETE /resources/279dadb7-7abf-40e5-a2ca-3742642c9b61.json HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:30:16,883:myserver.py:	DELETE /resources/ae4e869a-7c69-457a-b05c-9458cec34d03.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44480; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/ae4e869a-7c69-457a-b05c-9458cec34d03.json
+
+  
+
+2020-11-11 23:30:16,886:myserver.py:	DELETE /resources/279dadb7-7abf-40e5-a2ca-3742642c9b61.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20876; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/279dadb7-7abf-40e5-a2ca-3742642c9b61.json
+
+  
+
+2020-11-11 23:30:16,896:myserver.py:	DELETE /resources/0ca5caaa-a51b-40c3-ab1f-ac3938f1ab11.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39705; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/0ca5caaa-a51b-40c3-ab1f-ac3938f1ab11.txt
+
+  
+
+2020-11-11 23:30:16,896:myserver.py:	DELETE /resources/543314f4-f5ff-469c-83db-4aa449f816d4.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16485; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:30:16 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/543314f4-f5ff-469c-83db-4aa449f816d4.json
+
+  
+
+2020-11-11 23:30:17,833:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:30:17 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/550702d6-0d66-40ae-89c0-8a5e28584e7c.json
+
+  
+
+2020-11-11 23:30:17,834:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:30:17 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/207a161e-1e10-46d3-b667-b0c5bf26420e.json
+
+  
+
+2020-11-11 23:30:17,838:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:30:17 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/46152d18-76d8-406e-a5ef-8c2a3e9063ef.txt
+
+  
+
+2020-11-11 23:30:19,881:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:30:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/7e3eb926-2f6f-4af5-ac7e-e8b95e75d133.json
+
+  
+
+2020-11-11 23:30:19,881:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:30:19 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:30:20,883:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:30:20 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/plain; charset-utf-8
+Content-Location: ./htdocs/resources/623d10b1-b4db-48af-b35a-342b366c3b6c.txt
+
+  
+
+2020-11-11 23:31:05,479:myserver.py:	GET /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=46192; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:31:05,479:myserver.py:	GET /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43068; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:31:05,485:myserver.py:	GET /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43107; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:31:05,490:myserver.py:	GET /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=21043; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:31:05,490:myserver.py:	GET /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:31:05,497:myserver.py:	GET / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20360; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:31:05,497:myserver.py:	GET /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=12728; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:31:05,499:myserver.py:	HEAD /public/images.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=16340; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 235
+
+
+
+2020-11-11 23:31:05,500:myserver.py:	GET /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=22707; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:31:05,509:myserver.py:	HEAD /public/form.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=27089; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 429
+
+
+
+2020-11-11 23:31:05,512:myserver.py:	HEAD /public/form1.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=39063; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 319
+
+
+
+2020-11-11 23:31:05,512:myserver.py:	HEAD /public/video.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=14995; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 179
+
+
+
+2020-11-11 23:31:05,519:myserver.py:	HEAD /public/ipsum.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=49155; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 426
+
+
+
+2020-11-11 23:31:05,523:myserver.py:	HEAD /public/no-file.html HTTP/1.1	
+HTTP/1.1 404 Not Found
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 64
+
+
+
+2020-11-11 23:31:05,532:myserver.py:	HEAD /public/audio.html HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40458; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 273
+
+
+
+2020-11-11 23:31:05,533:myserver.py:	HEAD / HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=43988; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:05 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Length: 679
+
+
+
+2020-11-11 23:31:06,486:myserver.py:	POST / HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: multipart/form-data; charset-utf-8
+Content-Length: 907
+Content-Location: ./htdocs/resources/a05d874e-c295-45de-bf97-1910e05011eb.txt
+
+  
+
+2020-11-11 23:31:06,486:myserver.py:	POST /public HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/3c336989-ec32-47d9-a5f3-e6d1bbafa649.json
+
+  
+
+2020-11-11 23:31:06,487:myserver.py:	POST /nope HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/html; charset-utf-8
+Content-Location: ./htdocs/resources/ee8d599a-759a-407a-b64f-252340b5bda7.json
+
+  
+
+2020-11-11 23:31:06,537:myserver.py:	DELETE /resources/nope HTTP/1.1	
+HTTP/1.1 404 Not Found
+Set-Cookie: cookieid=12660; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/nope
+
+  
+
+2020-11-11 23:31:06,537:myserver.py:	DELETE /resources/46152d18-76d8-406e-a5ef-8c2a3e9063ef.txt HTTP/1.1	
+HTTP/1.1 401 Unauthorized
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+
+  
+
+2020-11-11 23:31:06,545:myserver.py:	DELETE /resources/46152d18-76d8-406e-a5ef-8c2a3e9063ef.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=33470; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/46152d18-76d8-406e-a5ef-8c2a3e9063ef.txt
+
+  
+
+2020-11-11 23:31:06,548:myserver.py:	DELETE /resources/a05d874e-c295-45de-bf97-1910e05011eb.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20749; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/a05d874e-c295-45de-bf97-1910e05011eb.txt
+
+  
+
+2020-11-11 23:31:06,548:myserver.py:	DELETE /resources/7e3eb926-2f6f-4af5-ac7e-e8b95e75d133.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=20000; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/7e3eb926-2f6f-4af5-ac7e-e8b95e75d133.json
+
+  
+
+2020-11-11 23:31:06,558:myserver.py:	DELETE /resources/ee8d599a-759a-407a-b64f-252340b5bda7.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40587; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/ee8d599a-759a-407a-b64f-252340b5bda7.json
+
+  
+
+2020-11-11 23:31:06,560:myserver.py:	DELETE /resources/550702d6-0d66-40ae-89c0-8a5e28584e7c.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=38690; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/550702d6-0d66-40ae-89c0-8a5e28584e7c.json
+
+  
+
+2020-11-11 23:31:06,561:myserver.py:	DELETE /resources/207a161e-1e10-46d3-b667-b0c5bf26420e.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=40232; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/207a161e-1e10-46d3-b667-b0c5bf26420e.json
+
+  
+
+2020-11-11 23:31:06,566:myserver.py:	DELETE /resources/3c336989-ec32-47d9-a5f3-e6d1bbafa649.json HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=44816; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/3c336989-ec32-47d9-a5f3-e6d1bbafa649.json
+
+  
+
+2020-11-11 23:31:06,568:myserver.py:	DELETE /resources/623d10b1-b4db-48af-b35a-342b366c3b6c.txt HTTP/1.1	
+HTTP/1.1 200 OK
+Set-Cookie: cookieid=13257; Max-Age=60
+Date: Wednesday, 11 Nov 2020 23:31:06 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Location: ./htdocs/resources/623d10b1-b4db-48af-b35a-342b366c3b6c.txt
+
+  
+
+2020-11-11 23:31:08,534:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:31:08 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/resources/d65824d0-929a-457d-95a2-339ea5cc5847.json
+
+  
+
+2020-11-11 23:31:08,535:myserver.py:	PUT /test_put/test.txt HTTP/1.1	
+HTTP/1.1 200 Ok
+Date: Wednesday, 11 Nov 2020 23:31:08 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: application/x-www-form-urlencoded; charset-utf-8
+Content-Location: ./htdocs/test_put/test.txt
+
+  
+
+2020-11-11 23:31:09,534:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:31:09 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: image/png; charset-utf-8
+Content-Location: ./htdocs/resources/4af2686b-dc8c-424b-920d-0c657fb2318e.png
+
+  
+
+2020-11-11 23:31:10,535:myserver.py:	PUT /resources HTTP/1.1	
+HTTP/1.1 201 Created
+Date: Wednesday, 11 Nov 2020 23:31:10 GMT
+Accept-Ranges: bytes
+Server: Deepika
+Content-Type: text/plain; charset-utf-8
+Content-Location: ./htdocs/resources/730d6619-25a1-4a76-badf-3d528c5072f8.txt
+
+  
+
