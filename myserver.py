@@ -24,7 +24,7 @@ import string
 # PASSWORD = "root"
 
 isbinary = False
-logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctime)s:%(filename)s:%(message)s')
+logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctime)s:    %(filename)s:%(message)s')
 
 # check versions and return accordingly in the starting
 
