@@ -6,6 +6,6 @@ if __name__ == "__main__":
     if(len(sys.argv) < 2): 
         port = 9000
     else:
-        port = sys.argv[0]
+        port = int(sys.argv[1])
     
     os.system("python3 myserver.py {}".format(port))
