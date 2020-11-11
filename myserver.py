@@ -286,7 +286,10 @@ def parse_urlencoded(postdata):
     parameters = {}
     for param in data:
         divide = param.split("=")
-        parameters[str(divide[0])] = divide[1]
+        if(len(divide) == 2):
+            parameters[str(divide[0])] = divide[1]
+        else:
+            parameters["null"] = "null"
     json_data = json.dumps(parameters)
     return json_data
 
@@ -371,10 +374,10 @@ def parse_multipart(message):
     return data
     
 
-def handle_post_request(client_socket, message, ):
+def handle_post_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
-    
+    print("WOW {}".format(message))
     request_header = {}
     for i in split_message:
         t = i.split(": ")
