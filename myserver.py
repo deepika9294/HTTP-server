@@ -115,6 +115,10 @@ def handle_binary_put_request(client_socket, message):
     logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
     client_socket.send(response.encode())
 
+'''
+---> need to give full url path after /htdocs 
+'''
+
 def handle_delete_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
