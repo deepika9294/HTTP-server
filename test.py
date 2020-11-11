@@ -10,6 +10,11 @@ def get(url):
     x = requests.get(url)
     print("GET: {}".format(x))
 
+def get_bad_request(url):
+    time.sleep(4)
+    x = requests.get(url, data={"key1":"1"})
+    print("GET BAD REQUEST: {}".format(x))
+
 def head(url):
     x = requests.head(url)
     print("HEAD: {}".format(x))
@@ -96,8 +101,13 @@ if __name__ == "__main__":
         base_url,
 
     ]
+    
     for url in urls:
         Thread(target = get, args=(url,)).start()
+
+    url = urls[0]
+    Thread(target = get_bad_request, args=(url,)).start()
+    
     '''
     HEAD
     '''
@@ -122,7 +132,7 @@ if __name__ == "__main__":
     filename = "favicon-16x16.png"
     content_type = "image/png"
     Thread(target = put_file, args=(url,filename,path, content_type)).start()
-    
+
     # need time to run next
     time.sleep(1)
 
