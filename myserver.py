@@ -51,6 +51,9 @@ def get_common_response(status_code,content_type,content_length,location,set_coo
     if(connection):
         response +="Connection: " + connection + "\r\n"
 
+    # if(content_encoding):
+    #     response +="Content-Encoding: " + content_encoding + "\r\n"
+
     return response
 
 
@@ -487,7 +490,19 @@ def handle_post_request(client_socket, message):
 
 
 
-#handle directory case
+'''
+Handles get as well as head request
+Here messages splited into headers and requests data
+Cookies are checked if already set or not
+Check if the entity body is also sent or not, if sent then it is a bad request
+Also check the version request
+Also check whether the requested url exist or not:
+    if exist: check whether have file permision or not
+    else return not found web page
+Checks the file type of requested document
+Check whether head or get request, and accordingly send the body
+
+'''
 def handle_get_head_request(client_socket, message):
     # print("GET {}".format(message))
     split_message = message[0].split("\r\n")
@@ -502,31 +517,24 @@ def handle_get_head_request(client_socket, message):
     else:
         set_cookie = str(random.randint(10000,50000))
 
-    # if("Accept-Language" in request_header):
-    #     accept_language = request_header["Accept-Language"]
-    # else:
-    #     accept_language = None     
-
-    # if("Accept-Encoding" in request_header):
-    #     accept_encoding = request_header["Accept-Encoding"]
-    # else:
-    #     accept_encoding = None  
-
     if("Connection" in request_header):
         connection = request_header["Connection"]
     else:
         connection = None
        
+    # default values
     content_type = "text/html"
     status_code = "202 Accepted"
     location = None
+
     '''request_0[0] defines method
     request_0[1] defines URL
     request_0[2] defines version
     print("REQUEST {}".format(request_0))'''
-    # print(message)
-    # print(len(message[1]))
-    # check condition of bad request and version 
+
+    # check condition of bad request 
+
+
     if(len(message[1]) != 0):
         status_code = "400 Bad Request"
         file_name = LINK + "badrequest.html"
@@ -546,8 +554,9 @@ def handle_get_head_request(client_socket, message):
         return
 
 
+     #if this happen then try to find index.html
+
     if('/' == request_0[1]):  
-        #if this happen then try to find index.html
         file_name = LINK + "index.html"
         content_type = "text/html"
 
@@ -615,6 +624,15 @@ def handle_get_head_request(client_socket, message):
         #resolve the broken pipe issue
         client_socket.send(file_data)       
 
+'''
+Threaded function for accepting different request from different clients
+Here following functions are implemented:
+    1. Decoding of the received message is done according to utf-8
+    2. If decoding undergoes any error, than ignore errors in excet block
+    3. Here split_message variable contains headers which are requested
+    4. With the help of header, appropriate function is called to send in the response
+
+'''
 
 def threading(client_socket,client_address):
     received_message = client_socket.recv(SIZE)
@@ -631,14 +649,31 @@ def threading(client_socket,client_address):
         message = received_message.split(b"\r\n\r\n")
         message[0] = message[0].decode(errors = 'ignore')
         isbinary = True
-        # print("ERROR Binary")
+
     split_message = message[0].split("\r\n")
-    # print("MESA000 {}".format(message))
-    # log.write(client_address)
-    # log.write(message[0])
     w.close()
 
-    if("GET" in split_message[0] or "HEAD" in split_message[0]):
+    version = split_message[0].split(" ")[2]
+    if(check_version(version) != -1):
+        print("version not supported")
+        status_code = check_version(request_0[0])
+        file_name = LINK + "version.html"
+        content_type = "text/html"
+        r_file = open(file_name, 'rb')
+        content_length = str(os.path.getsize(file_name))
+        location = None
+        response = get_common_response(status_code,content_type,content_length)
+        response += "\r\n"
+        file_data = r_file.read(document_length)
+        r_file.close()
+        logging.info('	{}	{}\n'.format(split_message[0], "\n"+ response))
+        client_socket.send(response.encode())
+        if("GET" == request_0[0]):
+            client_socket.send(file_data)
+        
+
+
+    elif("GET" in split_message[0] or "HEAD" in split_message[0]):
         handle_get_head_request(client_socket, message)
     elif("POST" in split_message[0]):
         handle_post_request(client_socket, message)
@@ -651,10 +686,16 @@ def threading(client_socket,client_address):
     client_socket.shutdown(SHUT_WR)
     # client_socket.close()
 
+'''
+Server is setup with multithreading
+If ctrl-C is pressed, KeyboardInterrupt is excepted and program is terminated
+'''
 
 def create_server(port):
     server_socket = socket(AF_INET, SOCK_STREAM)
-    server_socket.setsockopt(SOL_SOCKET,SO_REUSEADDR, 1)
+
+    #used to avoid getting error for "port already used"
+    server_socket.setsockopt(SOL_SOCKET,SO_REUSEADDR, 1)       
 
     try:
         server_socket.bind(("localhost",int(port)))
@@ -666,10 +707,10 @@ def create_server(port):
             # print("clientSocket {} and client address {}".format(client_socket,client_address))
 
             start_new_thread(threading,(client_socket,client_address,)) 
-        server_socket.close()    #check whether hoga ya nhi
+        server_socket.close()    
         
     except KeyboardInterrupt:
-        print("Closing....")
+        print("Server Closing....")
     except Exception as exc :
          print("ERROR Exception")
          print(exc) 
@@ -677,13 +718,16 @@ def create_server(port):
     server_socket.close()
 
 
-
+'''
+Driver program
+'''
 if __name__ == "__main__":
-    # print("Server started")
     if(len(sys.argv) < 2): 
         port = 9000
     else:
         port = sys.argv[1]
+
+    # Server is created and binded with the provided port
     create_server(port)
         
 

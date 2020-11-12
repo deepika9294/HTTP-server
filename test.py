@@ -62,13 +62,7 @@ if __name__ == "__main__":
     root = LINK
     port = sys.argv[1]
     host = '127.0.0.1'
-    try:
-        c = socket(AF_INET, SOCK_STREAM)
-        c.connect((host,port))
-        print("Client connected")
-    except:
-        c.close()
-
+    
     base_url = "http://" + 	host + ":" + port 
 
 
