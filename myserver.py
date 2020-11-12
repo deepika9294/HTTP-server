@@ -29,7 +29,7 @@ def check_version(version):
     else:
         return "505 HTTP Version Not Supported"
 
-def get_common_response(status_code,content_type,content_length,location,set_cookie=None, cookie=None,accept_language=None, accept_encoding=None,connection=None):
+def get_common_response(status_code,content_type,content_length,location,set_cookie=None, cookie=None,connection=None):
     current_time = datetime.datetime.now()
     response = "HTTP/1.1 " +status_code + "\r\n"
     if(set_cookie):
@@ -48,16 +48,11 @@ def get_common_response(status_code,content_type,content_length,location,set_coo
     if(location):
         response += "Content-Location: " + location + "\r\n"
 
-    if(accept_encoding):
-        response += "Accept-Encoding: " + accept_encoding + "\r\n"
-
-    if(accept_language):
-        response += "Accept-Language: " + accept_language + "\r\n"
-
     if(connection):
         response +="Connection: " + connection + "\r\n"
 
     return response
+
 
 def get_headers(split_message):
     request_header = {}
@@ -398,15 +393,15 @@ def handle_post_request(client_socket, message):
     else:
         set_cookie = str(random.randint(10000,50000))
 
-    if("Accept-Language" in request_header):
-        accept_language = request_header["Accept-Language"]
-    else:
-        accept_language = None     
+    # if("Accept-Language" in request_header):
+    #     accept_language = request_header["Accept-Language"]
+    # else:
+    #     accept_language = None     
 
-    if("Accept-Encoding" in request_header):
-        accept_encoding = request_header["Accept-Encoding"]
-    else:
-        accept_encoding = None  
+    # if("Accept-Encoding" in request_header):
+    #     accept_encoding = request_header["Accept-Encoding"]
+    # else:
+    #     accept_encoding = None  
 
     if("Connection" in request_header):
         connection = request_header["Connection"]
@@ -435,7 +430,7 @@ def handle_post_request(client_socket, message):
         
         content_length = None
         location = file_write
-        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie,accept_language,accept_encoding,connection)
+        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie,connection)
         response += "\r\n"
         logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
 
@@ -507,15 +502,15 @@ def handle_get_head_request(client_socket, message):
     else:
         set_cookie = str(random.randint(10000,50000))
 
-    if("Accept-Language" in request_header):
-        accept_language = request_header["Accept-Language"]
-    else:
-        accept_language = None     
+    # if("Accept-Language" in request_header):
+    #     accept_language = request_header["Accept-Language"]
+    # else:
+    #     accept_language = None     
 
-    if("Accept-Encoding" in request_header):
-        accept_encoding = request_header["Accept-Encoding"]
-    else:
-        accept_encoding = None  
+    # if("Accept-Encoding" in request_header):
+    #     accept_encoding = request_header["Accept-Encoding"]
+    # else:
+    #     accept_encoding = None  
 
     if("Connection" in request_header):
         connection = request_header["Connection"]
@@ -582,7 +577,7 @@ def handle_get_head_request(client_socket, message):
             r_file = open(file_name, 'rb')
             document_length = os.path.getsize(file_name)
             content_length = str(document_length)
-            response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie,accept_language,accept_encoding,connection)
+            response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie,connection)
             response += "\r\n"
             # print(response)
             if("image" in content_type or "video" in content_type or "audio" in content_type):
@@ -622,24 +617,19 @@ def handle_get_head_request(client_socket, message):
 
 
 def threading(client_socket,client_address):
-    # while(True):
-    #decide the size
     received_message = client_socket.recv(SIZE)
     w = open(LOGGING, "a")
     # print("------------------------------------------------------- {}".format(SIZE))
-    print("REC {}".format(received_message))  
+    # print("REC {}".format(received_message))  
     # print("---------------------------------------------------------------------")
     try:
         received_message = received_message.decode('utf-8')
         message = received_message.split("\r\n\r\n")
 
-        # print("STUDY {}".format(received_message))
     except UnicodeDecodeError:
         
         message = received_message.split(b"\r\n\r\n")
-        # print("MESA000 {}".format(message[0]))
         message[0] = message[0].decode(errors = 'ignore')
-        # print("MESA000 {}".format(message[0]))
         isbinary = True
         # print("ERROR Binary")
     split_message = message[0].split("\r\n")
@@ -648,9 +638,6 @@ def threading(client_socket,client_address):
     # log.write(message[0])
     w.close()
 
-
-    #note: sending split_message in get , as we dont require entity here
-    # handle directory here
     if("GET" in split_message[0] or "HEAD" in split_message[0]):
         handle_get_head_request(client_socket, message)
     elif("POST" in split_message[0]):
