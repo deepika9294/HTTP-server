@@ -15,13 +15,7 @@ from config import *
 import string
 
 
-#link
-# LINK = "./htdocs/"
-# RESOURCES = LINK + "resources/"
-# SIZE = 1024
-# LOGGING = LINK + "data.log"
-# USERNAME = "deepika"
-# PASSWORD = "root"
+
 
 isbinary = False
 logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctime)s:    %(filename)s:%(message)s')
@@ -64,6 +58,15 @@ def get_common_response(status_code,content_type,content_length,location,set_coo
         response +="Connection: " + connection + "\r\n"
 
     return response
+
+def get_headers(split_message):
+    request_header = {}
+    for i in split_message:
+        t = i.split(": ")
+        if(len(t) == 2):
+            request_header[t[0]] = t[1]
+    return request_header
+
 
 def handle_binary_put_request(client_socket, message):
     #see the encoding thing properly
@@ -131,12 +134,8 @@ def handle_binary_put_request(client_socket, message):
 def handle_delete_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
-    request_header = {}
-    for i in split_message:
-        t = i.split(": ")
-        if(len(t) == 2):
-            request_header[t[0]] = t[1]
-
+    
+    request_header = get_headers(split_message)
     cookie = None
     set_cookie = None
     if("Cookie" in request_header.keys()):
@@ -209,11 +208,9 @@ def handle_put_request(client_socket, message):
     request_0 = split_message[0].split(" ")
     cookie = None
     set_cookie = None
-    request_header = {}
-    for i in split_message:
-        t = i.split(": ")
-        if(len(t) == 2):
-            request_header[t[0]] = t[1]
+
+    request_header = get_headers(split_message)
+
     if("Cookie" in request_header):
         cookie = request_header["Cookie"]
     else:
@@ -394,11 +391,7 @@ def handle_post_request(client_socket, message):
     # print("WOW {}".format(message))
     cookie = None
     set_cookie = None
-    request_header = {}
-    for i in split_message:
-        t = i.split(": ")
-        if(len(t) == 2):
-            request_header[t[0]] = t[1]
+    request_header = get_headers(split_message)
 
     if("Cookie" in request_header):
         cookie = request_header["Cookie"]
@@ -497,13 +490,7 @@ def handle_post_request(client_socket, message):
         client_socket.send(response.encode())
     
 
-# def get_headers(split_message):
-#     request_header = {}
-#     for i in split_message:
-#         t = i.split(": ")
-#         if(len(t) == 2):
-#             request_header[t[0]] = t[1]
-#     return request_header
+
 
 #handle directory case
 def handle_get_head_request(client_socket, message):
@@ -513,11 +500,8 @@ def handle_get_head_request(client_socket, message):
     # is_cookie = False
     cookie = None
     set_cookie = None
-    request_header = {}
-    for i in split_message:
-        t = i.split(": ")
-        if(len(t) == 2):
-            request_header[t[0]] = t[1]
+
+    request_header = get_headers(split_message)
     if("Cookie" in request_header):
         cookie = request_header["Cookie"]
     else:
