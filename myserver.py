@@ -24,7 +24,7 @@ logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctim
 
 def check_version(version):
     # print(version)
-    if(version == "HTTP/1.1" or version == "HTTP/1.0"):
+    if(version == "HTTP/1.1"):
         return -1
     else:
         return "505 HTTP Version Not Supported"
@@ -631,7 +631,7 @@ Here following functions are implemented:
     2. If decoding undergoes any error, than ignore errors in excet block
     3. Here split_message variable contains headers which are requested
     4. With the help of header, appropriate function is called to send in the response
-
+    5. Also checks if version is supported or not
 '''
 
 def threading(client_socket,client_address):
