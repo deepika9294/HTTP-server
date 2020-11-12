@@ -103,6 +103,7 @@ if __name__ == "__main__":
         base_url + "/public/no-file.html",
         base_url + "/public/audio.html",
         base_url,
+        base_url + "/private/file.html"
 
     ]
     

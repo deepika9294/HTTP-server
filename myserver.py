@@ -536,23 +536,31 @@ def handle_get_head_request(client_socket, message):
 
 
     if os.path.isfile(file_name):
-        status_code = "200 OK"
-        r_file = open(file_name, 'rb')
-        document_length = os.path.getsize(file_name)
-        content_length = str(document_length)
-        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
-        response += "\r\n"
-        # print(response)
-        if("image" in content_type or "video" in content_type or "audio" in content_type):
-            file_data = b""
-            b = r_file.read(1)
-            while(b != b""):
-                file_data += b
-                b = r_file.read(1)
-        else:
-            file_data = r_file.read(document_length)
+        # Checking the permission, wheter file ahve access to read or write
 
-        r_file.close()
+        if (os.access(file_name, os.W_OK) and os.access(file_name, os.R_OK)):
+            status_code = "200 OK"
+            r_file = open(file_name, 'rb')
+            document_length = os.path.getsize(file_name)
+            content_length = str(document_length)
+            response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
+            response += "\r\n"
+            # print(response)
+            if("image" in content_type or "video" in content_type or "audio" in content_type):
+                file_data = b""
+                b = r_file.read(1)
+                while(b != b""):
+                    file_data += b
+                    b = r_file.read(1)
+            else:
+                file_data = r_file.read(document_length)
+
+            r_file.close()
+        else:
+            status_code = "403 Forbidden"
+            response = get_common_response(status_code,content_type,None,location,set_cookie,cookie)
+            response += "\r\n"
+            file_data = "<html><head></head><body>Forbidden.</body></html>"
 
     else:
         status_code = "404 Not Found"
