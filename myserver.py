@@ -35,7 +35,7 @@ def check_version(version):
     else:
         return "505 HTTP Version Not Supported"
 
-def get_common_response(status_code,content_type,content_length,location,set_cookie=None, cookie=None):
+def get_common_response(status_code,content_type,content_length,location,set_cookie=None, cookie=None,accept_language=None, accept_encoding=None,connection=None):
     current_time = datetime.datetime.now()
     response = "HTTP/1.1 " +status_code + "\r\n"
     if(set_cookie):
@@ -53,6 +53,15 @@ def get_common_response(status_code,content_type,content_length,location,set_coo
 
     if(location):
         response += "Content-Location: " + location + "\r\n"
+
+    if(accept_encoding):
+        response += "Accept-Encoding: " + accept_encoding + "\r\n"
+
+    if(accept_language):
+        response += "Accept-Language: " + accept_language + "\r\n"
+
+    if(connection):
+        response +="Connection: " + connection + "\r\n"
 
     return response
 
@@ -198,12 +207,17 @@ def handle_delete_request(client_socket, message):
 def handle_put_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
-    
+    cookie = None
+    set_cookie = None
     request_header = {}
     for i in split_message:
         t = i.split(": ")
         if(len(t) == 2):
             request_header[t[0]] = t[1]
+    if("Cookie" in request_header):
+        cookie = request_header["Cookie"]
+    else:
+        set_cookie = str(random.randint(10000,50000))
 
     content_type = request_header["Content-Type"]
     if(content_type == "application/x-www-form-urlencoded"): 
@@ -230,7 +244,7 @@ def handle_put_request(client_socket, message):
             status_code = "404 Not Found"
 
         content_length = None
-        response = get_common_response(status_code,content_type,content_length,location)
+        response = get_common_response(status_code,content_type,content_length,location,set_cookie ,cookie)
         response += "\r\n"
         logging.info('	{}	{}  \n'.format(split_message[0], "\n"+response))
 
@@ -259,7 +273,7 @@ def handle_put_request(client_socket, message):
             location =None
 
         content_length = None
-        response = get_common_response(status_code,content_type,content_length,location)
+        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
         response += "\r\n"
         logging.info('	{}	{}  \n'.format(split_message[0], "\n"+response))
 
@@ -378,11 +392,18 @@ def handle_post_request(client_socket, message):
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     # print("WOW {}".format(message))
+    cookie = None
+    set_cookie = None
     request_header = {}
     for i in split_message:
         t = i.split(": ")
         if(len(t) == 2):
             request_header[t[0]] = t[1]
+
+    if("Cookie" in request_header):
+        cookie = request_header["Cookie"]
+    else:
+        set_cookie = str(random.randint(10000,50000))
 
     content_type = request_header["Content-Type"]
     if(content_type == "application/x-www-form-urlencoded"): 
@@ -406,7 +427,7 @@ def handle_post_request(client_socket, message):
         
         content_length = None
         location = file_write
-        response = get_common_response(status_code,content_type,content_length,location)
+        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
         response += "\r\n"
         logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
 
@@ -439,7 +460,7 @@ def handle_post_request(client_socket, message):
         content_type = "multipart/form-data"
         content_length = content_length
         location = post_url
-        response = get_common_response(status_code,content_type,content_length,location)
+        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
 
         response += "\r\n"
         logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
@@ -452,19 +473,26 @@ def handle_post_request(client_socket, message):
     else: 
 
         status_code ="415 Unsupported Media Type"
-        # print(message[1])
-        # print(content_type)
         content_length = None
         location = None
         response = get_common_response(status_code,content_type,content_length,location)
-
         response += "\r\n"
-        logging.info('	{}	{}\n'.format(split_message[0], "\n"+ response))
 
+        logging.info('	{}	{}\n'.format(split_message[0], "\n"+ response))
         client_socket.send(response.encode())
     
+
+# def get_headers(split_message):
+#     request_header = {}
+#     for i in split_message:
+#         t = i.split(": ")
+#         if(len(t) == 2):
+#             request_header[t[0]] = t[1]
+#     return request_header
+
 #handle directory case
 def handle_get_head_request(client_socket, message):
+    print("GET {}".format(message))
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     # is_cookie = False
@@ -475,14 +503,26 @@ def handle_get_head_request(client_socket, message):
         t = i.split(": ")
         if(len(t) == 2):
             request_header[t[0]] = t[1]
-    # print(request_header)
-    #default_values    ------check if need to change
     if("Cookie" in request_header):
         cookie = request_header["Cookie"]
     else:
         set_cookie = str(random.randint(10000,50000))
 
-        
+    if("Accept-Language" in request_header):
+        accept_language = request_header["Accept-Language"]
+    else:
+        accept_language = None     
+
+    if("Accept-Encoding" in request_header):
+        accept_encoding = request_header["Accept-Encoding"]
+    else:
+        accept_encoding = None  
+
+    if("Connection" in request_header):
+        connection = request_header["Connection"]
+    else:
+        connection = None
+       
     content_type = "text/html"
     status_code = "202 Accepted"
     location = None
@@ -543,7 +583,7 @@ def handle_get_head_request(client_socket, message):
             r_file = open(file_name, 'rb')
             document_length = os.path.getsize(file_name)
             content_length = str(document_length)
-            response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
+            response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie,accept_language,accept_encoding,connection)
             response += "\r\n"
             # print(response)
             if("image" in content_type or "video" in content_type or "audio" in content_type):
@@ -560,7 +600,7 @@ def handle_get_head_request(client_socket, message):
             status_code = "403 Forbidden"
             response = get_common_response(status_code,content_type,None,location,set_cookie,cookie)
             response += "\r\n"
-            file_data = "<html><head></head><body>Forbidden.</body></html>"
+            file_data = b"<html><head></head><body>Forbidden.</body></html>"
 
     else:
         status_code = "404 Not Found"
