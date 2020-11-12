@@ -405,6 +405,21 @@ def handle_post_request(client_socket, message):
     else:
         set_cookie = str(random.randint(10000,50000))
 
+    if("Accept-Language" in request_header):
+        accept_language = request_header["Accept-Language"]
+    else:
+        accept_language = None     
+
+    if("Accept-Encoding" in request_header):
+        accept_encoding = request_header["Accept-Encoding"]
+    else:
+        accept_encoding = None  
+
+    if("Connection" in request_header):
+        connection = request_header["Connection"]
+    else:
+        connection = None
+
     content_type = request_header["Content-Type"]
     if(content_type == "application/x-www-form-urlencoded"): 
     
@@ -427,7 +442,7 @@ def handle_post_request(client_socket, message):
         
         content_length = None
         location = file_write
-        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie)
+        response = get_common_response(status_code,content_type,content_length,location,set_cookie,cookie,accept_language,accept_encoding,connection)
         response += "\r\n"
         logging.info('	{}	{}  \n'.format(split_message[0], "\n" + response))
 
@@ -492,7 +507,7 @@ def handle_post_request(client_socket, message):
 
 #handle directory case
 def handle_get_head_request(client_socket, message):
-    print("GET {}".format(message))
+    # print("GET {}".format(message))
     split_message = message[0].split("\r\n")
     request_0 = split_message[0].split(" ")
     # is_cookie = False
@@ -628,7 +643,7 @@ def threading(client_socket,client_address):
     received_message = client_socket.recv(SIZE)
     w = open(LOGGING, "a")
     # print("------------------------------------------------------- {}".format(SIZE))
-    # print("REC {}".format(received_message))  
+    print("REC {}".format(received_message))  
     # print("---------------------------------------------------------------------")
     try:
         received_message = received_message.decode('utf-8')
