@@ -18,6 +18,8 @@ import string
 
 
 isbinary = False
+
+# logging config
 logging.basicConfig(filename = LOGGING, level = logging.INFO, format = '%(asctime)s:    %(filename)s:%(message)s')
 
 # check versions and return accordingly in the starting
@@ -28,6 +30,11 @@ def check_version(version):
         return -1
     else:
         return "505 HTTP Version Not Supported"
+
+'''
+Response function, where in different response headers cintent are being send, 
+and response headers get appended in response variable
+'''
 
 def get_common_response(status_code,content_type,content_length,location,set_cookie=None, cookie=None,connection=None):
     current_time = datetime.datetime.now()
@@ -56,7 +63,10 @@ def get_common_response(status_code,content_type,content_length,location,set_coo
 
     return response
 
-
+'''
+This function takes in the request headers message, and convert it into a dictionary,
+having {header:header-value} key-value pair
+'''
 def get_headers(split_message):
     request_header = {}
     for i in split_message:
@@ -65,6 +75,15 @@ def get_headers(split_message):
             request_header[t[0]] = t[1]
     return request_header
 
+'''
+This functions handle Put request , which is off the the binary form, datas like image video etc.
+Here first the content-length is checked, and accordingly, server keeps on receiving data from client.
+Checks whether the file exist or not:
+    If file exist: rewrite it sending 200 status code
+    If not exist check whether requested url is directory or not, 
+        if directory, then create a file  with random filename, and write the content, send status code 200
+    Else not found
+'''
 
 def handle_binary_put_request(client_socket, message):
     #see the encoding thing properly
@@ -127,6 +146,12 @@ def handle_binary_put_request(client_socket, message):
 
 '''
 ---> need to give full url path after /htdocs 
+DELETE METHOD
+Check for body, if present than bad request, else check for authorisation.
+If not authorised then send unauthorised status code:
+
+If Authorsised check for the file existance and accordingly delete or send not found
+
 '''
 
 def handle_delete_request(client_socket, message):
@@ -200,6 +225,11 @@ def handle_delete_request(client_socket, message):
         client_socket.send(response.encode())
 
 
+
+'''
+PUT REQUESTS
+
+'''
 
 def handle_put_request(client_socket, message):
     split_message = message[0].split("\r\n")
