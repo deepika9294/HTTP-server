@@ -1,5 +1,4 @@
 import webbrowser, os, sys
-from socket import *
 from config import *
 # import threading
 # from _thread import *
@@ -13,15 +12,12 @@ def test(url):
 
 if __name__ == "__main__":
     root = LINK
-    port = sys.argv[1]
+    if(len(sys.argv) == 2):
+        port = sys.argv[1]
+    else:
+        print("Usage: python3 test.py <portno>")
+        sys.exit()
     host = '127.0.0.1'
-    try:
-        c = socket(AF_INET, SOCK_STREAM)
-        c.connect((host,port))
-        print("Client connected")
-    except:
-        c.close()
-
     base_url = "http://" + 	host + ":" + port 
     # test(base_url)
 

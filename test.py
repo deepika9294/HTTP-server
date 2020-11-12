@@ -60,11 +60,14 @@ def put_file(url,filename,path,content_type):
 
 if __name__ == "__main__":
     root = LINK
-    port = sys.argv[1]
-    host = '127.0.0.1'
-    
-    base_url = "http://" + 	host + ":" + port 
+    if(len(sys.argv) == 2):
+        port = sys.argv[1]
+    else:
+        print("Usage: python3 test.py <portno>")
+        sys.exit()
 
+    host = '127.0.0.1'
+    base_url = "http://" + 	host + ":" + port 
 
 
     '''

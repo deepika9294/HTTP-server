@@ -15,8 +15,6 @@ from config import *
 import string
 
 
-
-
 isbinary = False
 
 # logging config
@@ -124,7 +122,7 @@ def handle_binary_put_request(client_socket, message):
         r_file = open(url_path, "wb")
         r_file.write(file_data)
         r_file.close()
-        status_code = "200 Not Found"
+        status_code = "200 Ok"
 
     elif(os.path.isdir(url_path)):
         put_uuid = str(uuid.uuid4())
@@ -303,7 +301,7 @@ def handle_put_request(client_socket, message):
         logging.info('	{}	{}  \n'.format(split_message[0], "\n"+response))
 
         client_socket.send(response.encode())
-    elif(content_type == "image/png" or content_type == "image/jpg"):
+    elif(content_type == "image/png" or content_type == "image/jpg" or content_type == "image/jpeg"):
         handle_binary_put_request(client_socket, message)
 
     else:
@@ -318,7 +316,11 @@ def handle_put_request(client_socket, message):
 
         client_socket.send(response.encode())
 
-    
+'''
+Parsing url_encoded data
+Different keys are separated by &
+converting it into json dump
+'''
 
 def parse_urlencoded(postdata):
     data = postdata.split("&")
@@ -331,6 +333,12 @@ def parse_urlencoded(postdata):
             parameters["null"] = "null"
     json_data = json.dumps(parameters)
     return json_data
+
+
+'''
+parsing multipart data for post requests
+if binary data then decode with "ISO-859-1"
+'''
 
 def parse_multipart(message):
     entity_data = ""
@@ -411,7 +419,15 @@ def parse_multipart(message):
             pass
         data.append(new_message[count].split(' filename=')[0] + "filename=" + fname)
     return data
-    
+
+'''
+
+POST REQUEST 
+Get the request headers , check for cookies
+And Check for content-type, and accordingly perform the required function
+Method which are not implemented are returned with status code 415
+
+'''
 
 def handle_post_request(client_socket, message):
     split_message = message[0].split("\r\n")
@@ -426,15 +442,7 @@ def handle_post_request(client_socket, message):
     else:
         set_cookie = str(random.randint(10000,50000))
 
-    # if("Accept-Language" in request_header):
-    #     accept_language = request_header["Accept-Language"]
-    # else:
-    #     accept_language = None     
-
-    # if("Accept-Encoding" in request_header):
-    #     accept_encoding = request_header["Accept-Encoding"]
-    # else:
-    #     accept_encoding = None  
+   
 
     if("Connection" in request_header):
         connection = request_header["Connection"]
@@ -489,7 +497,7 @@ def handle_post_request(client_socket, message):
         for i in range(0,len(data)):
             r_file.write(data[i])
         r_file.close()
-        status_code = "200 Ok"
+        status_code = "201 Created"
         # else:
         #     status_code = "404 Not Found"
 
